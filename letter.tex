@@ -1,24 +1,22 @@
-\documentclass[11pt]{letter} % Default font size of the document, change to 10pt to fit more text
+\documentclass[11pt]{letter}
 \usepackage[sfdefault]{noto}
-
-% margins
-\topmargin=-1in % Moves the top of the document 1 inch above the default
-\textheight=10in % Total height of the text on the page before text goes on to the next page, this can be increased in a longer letter
-\oddsidemargin=-10pt % Position of the left margin, can be negative or positive if you want more or less room
-\textwidth=6.5in % Total width of the text, increase this if the left margin was decreased and vice-versa
-%\date{yyyy-mm-dd}
-\let\raggedleft\raggedright % Pushes the date (at the top) to the left, comment this line to have the date on the right
+\topmargin=-1in
+\textheight=10in
+\oddsidemargin=-10pt
+\textwidth=6.5in
+\date{yyyy-mm-dd}
+\let\raggedleft\raggedright
 \raggedbottom
+\signature{myname}
 
 \begin{document}
-
 \begin{letter}{
 theirname \\
 theirtitle \\
 theircompany \\
 theirstreet1 \\
 theirstreet2 \\
-theircity~ theirstate~~ theirzip
+theircity\ \ theirstate\ \ \ \ theirzip
 }
 
 myname \\
@@ -28,21 +26,18 @@ mystreet2 \\
 mycity~ mystate~~ myzip \\
 phone \\
 email
-% \vfill
 
-\signature{myname}
+\opening{subject \\ \\ Dear theirname:}
 
-% letter content
-\opening{subject \\ \\ Dear Sir or Madam:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \closing{Regards,}
-
 \encl{document1, document2, document3}
-
 \end{letter}
 \end{document}
-
