@@ -1,4 +1,5 @@
 # Examples of LaTeX documents
 
-| File | Description |
-| :--- | :---        |
+| File       | Description              |
+| :---       | :---                     |
+| letter.tex | Standard business letter |
