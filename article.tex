@@ -1,0 +1,76 @@
+% This is a template for documentclass{article}.
+
+% must always be first line of a .tex document
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{noto}
+\setlength{\textwidth}{6in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-1in}
+\setlength{\oddsidemargin}{.25in}
+\setlength{\evensidemargin}{.25in}
+
+% this package has better control over the date format
+\usepackage{datetime2}
+
+\usepackage{graphicx}
+\graphicspath{{fot/}}
+\usepackage[export]{adjustbox}
+\usepackage[singlelinecheck=false,justification=justified]{caption}
+\usepackage{titling}
+\setlength{\droptitle}{-8pt}
+\pretitle{\begin{flushleft}\LARGE\bfseries}
+\posttitle{\par\end{flushleft}}
+\preauthor{\begin{flushleft}\LARGE}
+\postauthor{\end{flushleft}}
+\predate{\begin{flushleft}}
+\postdate{\end{flushleft}}
+\date{\today}
+\title{article title}
+\author{article author}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\raggedbottom
+\renewenvironment{abstract}{\par\noindent\textbf{\abstractname}\par}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Prior research}
+\label{sec:results}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Results}
+\label{sec:results}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Work in progress}
+\label{sec:results}
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth, inner]{matplotlib_anatomy_of_a_figure}
+\caption{Anatomy of a matplotlib figure}
+\end{figure}
+
+Some of the \textbf{greatest} \textit{discoveries} in \underline{science} were made by \textbf{\textit{accident}}.
+
+tables
+
+equastions
+
+matrices
+
+lists
+
+\end{document}
+
