@@ -1,4 +1,5 @@
 % This is a template for documentclass{article}.
+% See https://ctan.org/ for available packages and documentation.
 
 % must always be first line of a .tex document
 \documentclass[12pt, letterpaper, twoside]{article}
@@ -13,10 +14,15 @@
 % this package has better control over the date format
 \usepackage{datetime2}
 
+% this package has better control over "floats"
+\usepackage{float}
+
 \usepackage{graphicx}
 \graphicspath{{fot/}}
 \usepackage[export]{adjustbox}
 \usepackage[singlelinecheck=false,justification=justified]{caption}
+
+% this package has better control of title, author elements
 \usepackage{titling}
 \setlength{\droptitle}{-8pt}
 \pretitle{\begin{flushleft}\LARGE\bfseries}
@@ -57,13 +63,34 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \section{Work in progress}
 \label{sec:results}
 
-\begin{figure}[h]
-\includegraphics[width=\textwidth, inner]{matplotlib_anatomy_of_a_figure}
+\subsection{Graphics}
+\label{sec:graphics}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% H means "here definitely" to place the figure
+\begin{figure}[H]
+% \includegraphics[width=\textwidth, inner]{matplotlib_anatomy_of_a_figure}
+\includegraphics[width=3in, inner]{matplotlib_anatomy_of_a_figure}
 \caption{Anatomy of a matplotlib figure}
 \end{figure}
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Inline mathematics}
+\label{sec:inline_mathematics}
+Examples of inline mathematics $\frac{a}{b}$, followed by text and another inline equation $\lim_{x\to 0}\frac{\sin x}{x}$=1 and more text $\sum_{k=0}^\infty \frac{1}{2^k}=2$ and finally much more text to cover many lines of a paragraph.
+
+\subsection{Separate mathematics}
+\label{sec:separate_mathematics}
+Examples of mathematics on their own lines.
+
+\subsection{Still to do}
+\label{sec:still_to_do}
+
 Some of the \textbf{greatest} \textit{discoveries} in \underline{science} were made by \textbf{\textit{accident}}.
 
+\subsubsection{Even more to do}
+\label{sec:even_more_to_do}
 tables
 
 equastions
