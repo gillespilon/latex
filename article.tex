@@ -42,6 +42,12 @@
 % very useful for mathematics
 \usepackage{amsmath, amsthm, amssymb}
 
+% to create a list of equations
+\usepackage{tocloft}
+
+\setlength{\cfttabindent}{0in}
+\setlength{\cftfigindent}{0in}
+
 \begin{document}
 \maketitle
 
@@ -49,9 +55,15 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 \end{abstract}
 
-\tableofcontents
-\newpage
+\newcommand{\listequationsname}{List of Equations}
+\newlistof{myequations}{equ}{\listequationsname}
+\newcommand{\myequations}[1]{%
+\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
+\renewcommand{\cftequtitlefont}{\normalfont\Large\bfseries}
 
+\tableofcontents
+
+\newpage
 \section{Introduction}
 \label{sec:introduction}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -75,6 +87,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 % H means 'here definitely' to place the figure
 \begin{figure}[H]
+\label{fig:anatomy_of_a_matplotlib_figure}
 % \includegraphics[width=\textwidth, inner]{matplotlib_anatomy_of_a_figure}
 \includegraphics[width=3in, left]{matplotlib_anatomy_of_a_figure}
 \caption{Anatomy of a matplotlib figure}
@@ -93,31 +106,45 @@ Examples of mathematics on their own lines. All equations are flush-left to the 
 \begin{flalign}
     \text{measured observation} = \text{true value} + \text{measurement system error}&&
 \end{flalign}
+\myequations{Measured observation}
 
 \begin{flalign}
     \text{ICC} = \frac{\text{variance of the product values}}{\text{variance of the product observations}}&&
 \end{flalign}
+\myequations{Intraclass correlation coefficient}
 
 \begin{flalign}
-    \overline{X}  \pm \text{CI} & = \frac{\sum\limits_{i=1}^{n} X_i}{n} \pm t_{1- \alpha / 2 \, \text{,} \, n-1} \times \frac{s}{\sqrt{n}}&& \\
+    \overline{X}  \pm \text{CI} & = \frac{\sum\limits_{i=1}^{n} X_i}{n} \pm t_{1- \alpha / 2 \, \text{,} \, n-1} \times \frac{s}{\sqrt{n}}&&
+\end{flalign}
+\myequations{Average $\pm$ confidence interval}
+
+\begin{flalign}
     \text{distance to target} & = \text{specification target} - \text{location statistic} = T - \overline{X}&&
 \end{flalign}
+\myequations{Distance to target}
 
 \begin{flalign}
-    s \pm \text{CI} & = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}} \pm \left(\sqrt{\frac{(n - 1)\,s^{2}}{\chi_{\alpha / 2}^2}},\sqrt{\frac{(n - 1)\,s^{2}}{\chi_{1 - {\alpha / 2}}^2}}\right)&& \\
+    s \pm \text{CI} & = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}} \pm \left(\sqrt{\frac{(n - 1)\,s^{2}}{\chi_{\alpha / 2}^2}},\sqrt{\frac{(n - 1)\,s^{2}}{\chi_{1 - {\alpha / 2}}^2}}\right)&&
+\end{flalign}
+\myequations{Standard deviation $\pm$ confidence interval}
+
+\begin{flalign}
     \text{distance to nearest specification} & = \frac{\text{nearest specification} - \text{location statistic}}{\text{dispersion statistic}}&& \\
                                              & = \frac{\text{min}\,(\overline{X} - \text{LSL}\,, \text{USL} - \overline{X})}{s}&&
 \end{flalign}
+\myequations{Distance to nearest specification}
 
 The confidence intervals are:
 
 \begin{flalign}
     \text{Lower bound} = \hat{P}_{pk} - z_{1 - \alpha / 2} \sqrt{\frac{1}{\left(\frac{\text{toler}}{2}\right)^2 n} + \frac{\left(\hat{P}_{pk}\right)^2}{2 \nu}}&&
 \end{flalign}
+\myequations{$\hat{P}_{pk}$ lower bound}
 
 \begin{flalign}
     \text{Upper bound} = \hat{P}_{pk} + z_{1- \alpha / 2} \sqrt{\frac{1}{\left(\frac{\text{toler}}{2}\right)^2 n} + \frac{\left(\hat{P}_{pk}\right)^2}{2 \nu}}&&
 \end{flalign}
+\myequations{$\hat{P}_{pk}$ upper bound}
 
 where:
 
@@ -141,6 +168,15 @@ tables
 matrices
 
 lists
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+\newpage
+\listofmyequations
 
 \end{document}
 
