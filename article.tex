@@ -11,17 +11,6 @@
 \setlength{\oddsidemargin}{.25in}
 \setlength{\evensidemargin}{.25in}
 
-% this package has better control over the date format
-\usepackage{datetime2}
-
-% this package has better control over 'floats'
-\usepackage{float}
-
-\usepackage{graphicx}
-\graphicspath{{fot/}}
-\usepackage[export]{adjustbox}
-\usepackage[singlelinecheck=false,justification=justified]{caption}
-
 % this package has better control of title, author elements
 \usepackage{titling}
 \setlength{\droptitle}{-8pt}
@@ -38,6 +27,18 @@
 \setlength{\parskip}{6pt}
 \raggedbottom
 \renewenvironment{abstract}{\par\noindent\textbf{\abstractname}\par}
+
+% this package has better control over the date format
+\usepackage{datetime2}
+
+% this package has better control over 'floats'
+\usepackage{float}
+
+% this package has better control over images
+\usepackage{graphicx}
+\graphicspath{{fot/}}
+\usepackage[export]{adjustbox}
+\usepackage[singlelinecheck=false,justification=justified]{caption}
 
 % very useful for mathematics
 \usepackage{amsmath, amsthm, amssymb}
@@ -207,8 +208,6 @@ Some of the \textbf{greatest} \textit{discoveries} in \underline{science} were m
 \subsubsection{Not started}
 \label{sec:even_more_to_do}
 matrices
-
-lists
 
 \newpage
 \listoffigures
