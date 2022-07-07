@@ -44,9 +44,11 @@
 
 % to create a list of equations
 \usepackage{tocloft}
-
 \setlength{\cfttabindent}{0in}
 \setlength{\cftfigindent}{0in}
+
+% used to create tables
+\usepackage{booktabs}
 
 \begin{document}
 \maketitle
@@ -55,6 +57,7 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 \end{abstract}
 
+% create a list of equations command
 \newcommand{\listequationsname}{List of Equations}
 \newlistof{myequations}{equ}{\listequationsname}
 \newcommand{\myequations}[1]{%
@@ -81,7 +84,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \section{Work in progress}
 \label{sec:work_in_progress}
 
-\subsection{Graphics}
+\section{Graphics}
 \label{sec:graphics}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -95,8 +98,46 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+\section{Tables}
+\label{sec:tables}
+
+\begin{table}[H]
+\begin{flushleft}
+\begin{tabular}{lcccccc}
+\toprule
+& I &  II & III & IV & V & VI \\
+\midrule
+Vandali     & 123 & 456 & 678 & 321 & 644 & 768  \\
+Visigothorum & 021 & 229 & 678 & 123 & 456 & 678 \\
+\bottomrule
+\end{tabular}
+\label{tab:visigothi_cum_romanis}
+\caption{Visigothi cum Romanis}
+\end{flushleft}
+\end{table}
+
+\begin{table}[H]
+\begin{flushleft}
+\begin{tabular}{ccc}
+\toprule
+$A$ & $B$ & $ A \land B$ \\
+\midrule
+T & T & T \\
+T & F & F \\
+F & T & F \\
+F & F & F \\
+\bottomrule
+\end{tabular}
+\label{tab:boolean_truth_table}
+\caption{Boolean truth table}
+\end{flushleft}
+\end{table}
+
+\section{Mathematics}
+\label{sec:mathematics}
+
 \subsection{Inline mathematics}
-\label{sec:inline_mathematics}
+\label{sec:inline_mathematics}`
 Examples of inline mathematics $\frac{a}{b}$, followed by text and another inline equation $\lim_{x\to 0}\frac{\sin x}{x}$=1 and more text $\sum_{k=0}^\infty \frac{1}{2^k}=2$ and finally much more text to cover many lines of a paragraph.
 
 \subsection{Display-style mathematics}
@@ -156,15 +197,15 @@ where:
     z_{1 - \alpha / 2}          & = \text{the $1 - \alpha / 2$ percentile of the standard normal distribution}&& \\
 \end{flalign*}
 
-\subsection{Still to do}
+\section{Still to do}
 \label{sec:still_to_do}
 
+\subsection{Almost done}
+\label{sec:even_more_to_do}
 Some of the \textbf{greatest} \textit{discoveries} in \underline{science} were made by \textbf{\textit{accident}}.
 
-\subsubsection{Even more to do}
+\subsubsection{Not started}
 \label{sec:even_more_to_do}
-tables
-
 matrices
 
 lists
