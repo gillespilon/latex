@@ -2,7 +2,7 @@
 % See https://ctan.org/ for available packages and documentation.
 
 % must always be first line of a <path.tex> document
-\documentclass[12pt, letterpaper, twoside]{article}
+\documentclass[10pt, letterpaper, twoside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[sfdefault]{noto}
 \setlength{\textwidth}{6in}
@@ -39,6 +39,9 @@
 \raggedbottom
 \renewenvironment{abstract}{\par\noindent\textbf{\abstractname}\par}
 
+% very useful for mathematics
+\usepackage{amsmath, amsthm, amssymb}
+
 \begin{document}
 \maketitle
 
@@ -51,7 +54,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \section{Prior research}
-\label{sec:results}
+\label{sec:prior_research}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -61,7 +64,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \section{Work in progress}
-\label{sec:results}
+\label{sec:work_in_progress}
 
 \subsection{Graphics}
 \label{sec:graphics}
@@ -80,9 +83,48 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \label{sec:inline_mathematics}
 Examples of inline mathematics $\frac{a}{b}$, followed by text and another inline equation $\lim_{x\to 0}\frac{\sin x}{x}$=1 and more text $\sum_{k=0}^\infty \frac{1}{2^k}=2$ and finally much more text to cover many lines of a paragraph.
 
-\subsection{Separate mathematics}
-\label{sec:separate_mathematics}
-Examples of mathematics on their own lines.
+\subsection{Display-style mathematics}
+\label{sec:display_style_mathematics}
+Examples of mathematics on their own lines. All equations are flush-left to the page unless multilines, and thus aligned on a symbol with the longest equation flush-left. The equations numbers are flush-right.
+
+\begin{flalign}
+    \text{measured observation} = \text{true value} + \text{measurement system error}&&
+\end{flalign}
+
+\begin{flalign}
+    \text{ICC} = \frac{\text{variance of the product values}}{\text{variance of the product observations}}&&
+\end{flalign}
+
+\begin{flalign}
+    \overline{X}  \pm \text{CI} & = \frac{\sum\limits_{i=1}^{n} X_i}{n} \pm t_{1- \alpha / 2 \, \text{,} \, n-1} \times \frac{s}{\sqrt{n}}&& \\
+    \text{distance to target} & = \text{specification target} - \text{location statistic} = T - \overline{X}&&
+\end{flalign}
+
+\begin{flalign}
+    s \pm \text{CI} & = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}} \pm \left(\sqrt{\frac{(n - 1)\,s^{2}}{\chi_{\alpha / 2}^2}},\sqrt{\frac{(n - 1)\,s^{2}}{\chi_{1 - {\alpha / 2}}^2}}\right)&& \\
+    \text{distance to nearest specification} & = \frac{\text{nearest specification} - \text{location statistic}}{\text{dispersion statistic}}&& \\
+                                             & = \frac{\text{min}\,(\overline{X} - \text{LSL}\,, \text{USL} - \overline{X})}{s}&&
+\end{flalign}
+
+The confidence intervals are:
+
+\begin{flalign}
+    \text{Lower bound} = \hat{P}_{pk} - z_{1 - \alpha / 2} \sqrt{\frac{1}{\left(\frac{\text{toler}}{2}\right)^2 n} + \frac{\left(\hat{P}_{pk}\right)^2}{2 \nu}}&&
+\end{flalign}
+
+\begin{flalign}
+    \text{Upper bound} = \hat{P}_{pk} + z_{1- \alpha / 2} \sqrt{\frac{1}{\left(\frac{\text{toler}}{2}\right)^2 n} + \frac{\left(\hat{P}_{pk}\right)^2}{2 \nu}}&&
+\end{flalign}
+
+where:
+
+\begin{flalign*}
+    n                           & = \text{the number of observations in the sample}&& \\
+    \nu                         & = \text{the degrees of freedom $= n - 1$}&& \\
+    \chi_{\alpha \text{,}\nu}^2 & = \text{the $\alpha$ percentile of the chi-square distribution with $\nu$ degrees of freedom}&& \\
+    \text{toler}                & = \text{multiplier of the standard deviation tolerance (Minitab\textregistered\ uses 6 as the default value)}&& \\
+    z_{1 - \alpha / 2}          & = \text{the $1 - \alpha / 2$ percentile of the standard normal distribution}&& \\
+\end{flalign*}
 
 \subsection{Still to do}
 \label{sec:still_to_do}
@@ -92,10 +134,6 @@ Some of the \textbf{greatest} \textit{discoveries} in \underline{science} were m
 \subsubsection{Even more to do}
 \label{sec:even_more_to_do}
 tables
-
-equastions
-
-inline equation test: $x \leq 5$ works
 
 matrices
 
