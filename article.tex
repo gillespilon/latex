@@ -133,16 +133,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \newpage
 \section{Bold, italics, and underline}
 \label{sec:bold_italics_underline}
-Bold text is done with \textbackslash{textbf\{\textless text \textgreater\}} such as \textbf{bolded text}.
-
-Italics text is done with \textbackslash{textit\{\textless text \textgreater\}} such as \textit{italics text}.
-
-Underline text is done with \textbackslash{underline\{\textless text \textgreater\}} such as \underline{italics text}.
-
-Bold and italics text is done with \textbackslash{textbf\{\textbackslash{textit\{\textless text \textgreater\}\}} such as \textbf{\textit{bolded text}}.
-
 Some of the \textbf{greatest} \textit{discoveries} in \underline{science} were made by \textbf{\textit{accident}}.
 
+\section{URLs}
+\label{sec:urls}
+Hyperlinks within the document can be easily added. For example, see Graphics \ref{sec:graphics} and Anatomy of a matplotlib figure \ref{fig:anatomy_of_a_matplotlib_figure} and Definition of a limit \ref{def:limit}.
+
+Hyperlinks to external URLs can be easily added. For example, see \href{https://en.wikipedia.org/wiki/Latex}{Wikipedia \LaTeX}.
 \section{Lists}
 Unordered list
 \begin{itemize}
@@ -179,11 +176,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 % H means 'here definitely' to place the figure
 \begin{figure}[H]
-\label{fig:anatomy_of_a_matplotlib_figure}
 % \includegraphics[width=\textwidth, inner]{matplotlib_anatomy_of_a_figure}
 \includegraphics[width=3in, left]{matplotlib_anatomy_of_a_figure}
 \caption{Anatomy of a matplotlib figure}
 \end{figure}
+\label{fig:anatomy_of_a_matplotlib_figure}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -326,13 +323,6 @@ The formatting of the bibliography is not quite what I wish. I will explore bibt
 
 Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
 
-\section{Still to do}
-\label{sec:still_to_do}
-
-\subsubsection{Not started}
-\label{sec:even_more_to_do}
-- matrices
-
 \newpage
 \listoffigures
 
@@ -352,8 +342,8 @@ Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
 \listofmycorollaries
 
 \newpage
-\section{Acknowledgement}
-\label{sec:acknowledgement}
+\section{Acknowledgements}
+\label{sec:acknowledgements}
 
 The author wishes to thank ...
 
