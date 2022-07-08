@@ -51,6 +51,8 @@
 % used to create tables
 \usepackage{booktabs}
 
+% set references indent
+
 \begin{document}
 \maketitle
 
@@ -193,6 +195,12 @@ where:
     z_{1 - \alpha / 2}          & = \text{the $1 - \alpha / 2$ percentile of the standard normal distribution}&& \\
 \end{flalign*}
 
+\section{Citations}
+\label{sec:citations}
+The formatting of the bibliography is not quite what I wish. I will explore bibtex for this. For now, here is how to site articles, books, and online references.
+
+Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
+
 \section{Still to do}
 \label{sec:still_to_do}
 
@@ -222,6 +230,12 @@ The author wishes to thank ...
 \label{sec:supporting_information}
 
 Add files, data, and other supporting information, and where it can be obtained.
+
+\begin{thebibliography}{99}
+\bibitem{JD} Doe, John. 2000. Title of book.
+\bibitem{JS} Smith, John. 2013. \textit{Title of article}.
+\bibitem{JT} Thomas, John. 2022. \textit{Online reference}.
+\end{thebibliography}
 
 \end{document}
 
