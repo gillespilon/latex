@@ -53,6 +53,22 @@
 
 % set references indent
 
+% useful for definitions, theorems, corollaries, etc.
+\theoremstyle{myenv}
+\theoremstyle{mytheorem}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{axiom}[theorem]{Axiom}
+\theoremstyle{mydefinition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+
 % set no indent for lists
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
@@ -71,6 +87,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \newcommand{\myequations}[1]{%
 \addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
 \renewcommand{\cftequtitlefont}{\normalfont\Large\bfseries}
+
+% create a list of definitions command
+\newcommand{\listdefinitionsname}{List of Definitions}
+\newlistof{mydefinitions}{def}{\listdefinitionsname}
+\newcommand{\mydefinitions}[1]{%
+\addcontentsline{def}{mydefinitions}{\protect\numberline{\thedefinition}#1}\par}
+\renewcommand{\cftdeftitlefont}{\normalfont\Large\bfseries}
 
 \tableofcontents
 
@@ -245,6 +268,29 @@ where:
     z_{1 - \alpha / 2}          & = \text{the $1 - \alpha / 2$ percentile of the standard normal distribution}&& \\
 \end{flalign*}
 
+\section{Definitions}
+\label{sec:definitions}
+
+\begin{definition}[Definition of limit]
+\label{def:limit}
+Let $f$ be a function defined on an open interval containing $x=a$, but perhaps not at $x=a$.  We say $\displaystyle\lim_{x\to a}f(x)=L$ if for any $\epsilon>0$ there exists $\delta>0$ such that $|f(x)-L|<\epsilon$ whenever $0<|x-a|<\delta$.
+\end{definition}
+\mydefinitions{Definition of limit}
+
+\begin{definition}
+\label{def:derivative}
+The \textit{derivative} of $f$ is defined to be $\displaystyle f^\prime(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$, if this limit exists.
+\end{definition}
+\mydefinitions{Derivative of f}
+
+\section{Theorems}
+\label{sec:theorems}
+
+\begin{theorem}[Fundamental Theorem of Calculus]
+\label{thm:ftc}
+If $f$ is continuous on the interval $[a,b]$, then \[\frac{d}{dx}\int_a^x f(t)dx=f(x)\] for all $a\le x\le b$.
+\end{theorem}
+
 \newpage
 \section{Citations}
 \label{sec:citations}
@@ -268,6 +314,10 @@ Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
 \newpage
 \listofmyequations
 
+\newpage
+\listofmydefinitions
+
+\newpage
 \section{Acknowledgement}
 \label{sec:acknowledgement}
 
