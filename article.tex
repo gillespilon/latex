@@ -53,6 +53,11 @@
 
 % set references indent
 
+% set no indent for lists
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
+
 \begin{document}
 \maketitle
 
@@ -82,6 +87,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \label{sec:results}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+\newpage
 \section{Bold, italics, and underline}
 \label{sec:bold_italics_underline}
 Bold text is done with \textbackslash{textbf\{\textless text \textgreater\}} such as \textbf{bolded text}.
@@ -93,6 +99,35 @@ Underline text is done with \textbackslash{underline\{\textless text \textgreate
 Bold and italics text is done with \textbackslash{textbf\{\textbackslash{textit\{\textless text \textgreater\}\}} such as \textbf{\textit{bolded text}}.
 
 Some of the \textbf{greatest} \textit{discoveries} in \underline{science} were made by \textbf{\textit{accident}}.
+
+\section{Lists}
+Unordered list
+\begin{itemize}
+    \item Illinois
+        \begin{itemize}
+            \item Chicago
+            \item Naperville
+        \end{itemize}
+    \item Kentucky
+        \begin{itemize}
+            \item Lexington
+            \item Louisville
+        \end{itemize}
+\end{itemize}
+
+Ordered list
+\begin{enumerate}
+    \item Cat
+        \begin{enumerate}
+            \item Persian
+            \item Siamese
+        \end{enumerate}
+    \item Dog
+        \begin{enumerate}
+            \item Aussiedoodle
+            \item Newfoundland
+        \end{enumerate}
+\end{enumerate}
 
 \newpage
 \section{Graphics}
@@ -222,7 +257,7 @@ Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
 
 \subsubsection{Not started}
 \label{sec:even_more_to_do}
-matrices
+- matrices
 
 \newpage
 \listoffigures
