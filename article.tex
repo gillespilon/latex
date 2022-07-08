@@ -68,6 +68,9 @@
 \newtheorem{problem}[theorem]{Problem}
 \newtheorem{example}[theorem]{Example}
 \newtheorem{remark}[theorem]{Remark}
+\makeatletter
+\@addtoreset{theorem}{section}
+\makeatother
 
 % set no indent for lists
 \usepackage{enumitem}
@@ -88,12 +91,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
 \renewcommand{\cftequtitlefont}{\normalfont\Large\bfseries}
 
+% create a list of theorems command
+\newcommand{\listtheoremsname}{List of Theorems}
+\newlistof{mytheorems}{thm}{\listtheoremsname}
+\newcommand{\mytheorems}[1]{%
+\addcontentsline{thm}{mytheorems}{\protect\numberline{\thetheorem}#1}\par}
+\renewcommand{\cftthmtitlefont}{\normalfont\Large\bfseries}
+
 % create a list of definitions command
 \newcommand{\listdefinitionsname}{List of Definitions}
 \newlistof{mydefinitions}{def}{\listdefinitionsname}
 \newcommand{\mydefinitions}[1]{%
 \addcontentsline{def}{mydefinitions}{\protect\numberline{\thedefinition}#1}\par}
 \renewcommand{\cftdeftitlefont}{\normalfont\Large\bfseries}
+
+% create a list of corollaries command
+\newcommand{\listcorollariesname}{List of Corollaries}
+\newlistof{mycorollaries}{cor}{\listcorollariesname}
+\newcommand{\mycorollaries}[1]{%
+\addcontentsline{cor}{mycorollaries}{\protect\numberline{\thecorollary}#1}\par}
+\renewcommand{\cftcortitlefont}{\normalfont\Large\bfseries}
 
 \tableofcontents
 
@@ -290,6 +307,14 @@ The \textit{derivative} of $f$ is defined to be $\displaystyle f^\prime(x)=\lim_
 \label{thm:ftc}
 If $f$ is continuous on the interval $[a,b]$, then \[\frac{d}{dx}\int_a^x f(t)dx=f(x)\] for all $a\le x\le b$.
 \end{theorem}
+\mytheorems{Fundamental theorem of calculus}
+
+\section{Corollaries}
+\label{sec:corollaries}
+\begin{corollary}
+If $f$ is continuous on the interval $[a,b]$, then \[\int_a^b f(x)dx=F(b)-F(a)\] where $F$ is any antiderivative of $f$.
+\end{corollary}
+\mycorollaries{f is continuous}
 
 \newpage
 \section{Citations}
@@ -316,6 +341,12 @@ Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
 
 \newpage
 \listofmydefinitions
+
+\newpage
+\listofmytheorems
+
+\newpage
+\listofmycorollaries
 
 \newpage
 \section{Acknowledgement}
