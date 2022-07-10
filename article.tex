@@ -61,8 +61,8 @@
 \theoremstyle{mytheorem}
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{axiom}[theorem]{Axiom}
 \theoremstyle{mydefinition}
 \newtheorem{definition}[theorem]{Definition}
@@ -101,19 +101,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \addcontentsline{thm}{mytheorems}{\protect\numberline{\thetheorem}#1}\par}
 \renewcommand{\cftthmtitlefont}{\normalfont\Large\bfseries}
 
-% create a list of definitions command
-\newcommand{\listdefinitionsname}{List of Definitions}
-\newlistof{mydefinitions}{def}{\listdefinitionsname}
-\newcommand{\mydefinitions}[1]{%
-\addcontentsline{def}{mydefinitions}{\protect\numberline{\thedefinition}#1}\par}
-\renewcommand{\cftdeftitlefont}{\normalfont\Large\bfseries}
-
 % create a list of corollaries command
 \newcommand{\listcorollariesname}{List of Corollaries}
 \newlistof{mycorollaries}{cor}{\listcorollariesname}
 \newcommand{\mycorollaries}[1]{%
 \addcontentsline{cor}{mycorollaries}{\protect\numberline{\thecorollary}#1}\par}
 \renewcommand{\cftcortitlefont}{\normalfont\Large\bfseries}
+
+% create a list of lemmas command
+\newcommand{\listlemmasname}{List of Lemmas}
+\newlistof{mylemmas}{lem}{\listlemmasname}
+\newcommand{\mylemmas}[1]{%
+\addcontentsline{lem}{mylemmas}{\protect\numberline{\thelemma}#1}\par}
+\renewcommand{\cftlemtitlefont}{\normalfont\Large\bfseries}
+
+% create a list of definitions command
+\newcommand{\listdefinitionsname}{List of Definitions}
+\newlistof{mydefinitions}{def}{\listdefinitionsname}
+\newcommand{\mydefinitions}[1]{%
+\addcontentsline{def}{mydefinitions}{\protect\numberline{\thedefinition}#1}\par}
+\renewcommand{\cftdeftitlefont}{\normalfont\Large\bfseries}
 
 \tableofcontents
 
@@ -336,11 +343,52 @@ If $f$ is continuous on the interval $[a,b]$, then \[\int_a^b f(x)dx=F(b)-F(a)\]
 \mycorollaries{f is continuous}
 
 \newpage
+\section{Lemmas}
+
+\label{sec:lemmas}
+\begin{lemma}
+x+y=z
+\end{lemma}
+\mylemmas{Lem 1}
+
+\begin{lemma}
+z-r+t=3
+\end{lemma}
+\mylemmas{Lem 2}
+
+\begin{lemma}
+q=r
+\end{lemma}
+\mylemmas{Lem 3}
+
+\begin{lemma}
+x+y=z
+\end{lemma}
+\mylemmas{Lem 4}
+
+\begin{lemma}
+z-r+t=3
+\end{lemma}
+\mylemmas{Lem 5}
+
+\begin{lemma}
+q=r
+\end{lemma}
+\mylemmas{Lem 6}
+
+\newpage
 \section{Citations}
 \label{sec:citations}
 The formatting of the bibliography is not quite what I wish. I will explore bibtex for this. For now, here is how to site articles, books, and online references.
 
 Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
+
+\newpage
+\section{To do}
+
+\begin{itemize}
+    \item proposition
+\end{itemize}
 
 \newpage
 \listoffigures
@@ -359,6 +407,9 @@ Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
 
 \newpage
 \listofmycorollaries
+
+\newpage
+\listofmylemmas
 
 \newpage
 \section{Acknowledgements}
