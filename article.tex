@@ -115,6 +115,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \addcontentsline{lem}{mylemmas}{\protect\numberline{\thelemma}#1}\par}
 \renewcommand{\cftlemtitlefont}{\normalfont\Large\bfseries}
 
+% create a list of propositions command
+\newcommand{\listpropositionsname}{List of Propositions}
+\newlistof{mypropositions}{prop}{\listpropositionsname}
+\newcommand{\mypropositions}[1]{%
+\addcontentsline{prop}{mypropositions}{\protect\numberline{\theproposition}#1}\par}
+\renewcommand{\cftproptitlefont}{\normalfont\Large\bfseries}
+
 % create a list of definitions command
 \newcommand{\listdefinitionsname}{List of Definitions}
 \newlistof{mydefinitions}{def}{\listdefinitionsname}
@@ -122,6 +129,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \addcontentsline{def}{mydefinitions}{\protect\numberline{\thedefinition}#1}\par}
 \renewcommand{\cftdeftitlefont}{\normalfont\Large\bfseries}
 
+\newpage
 \tableofcontents
 
 \newpage
@@ -347,34 +355,48 @@ If $f$ is continuous on the interval $[a,b]$, then \[\int_a^b f(x)dx=F(b)-F(a)\]
 
 \label{sec:lemmas}
 \begin{lemma}
-x+y=z
+$x+y=z$
 \end{lemma}
 \mylemmas{Lem 1}
 
 \begin{lemma}
-z-r+t=3
+$z-r+t=3$
 \end{lemma}
 \mylemmas{Lem 2}
 
 \begin{lemma}
-q=r
+$q=r$
 \end{lemma}
 \mylemmas{Lem 3}
 
 \begin{lemma}
-x+y=z
+$x+y=z$
 \end{lemma}
 \mylemmas{Lem 4}
 
 \begin{lemma}
-z-r+t=3
+$z-r+t=3$
 \end{lemma}
 \mylemmas{Lem 5}
 
 \begin{lemma}
-q=r
+$q=r$
 \end{lemma}
 \mylemmas{Lem 6}
+
+\newpage
+\section{Propositions}
+
+\label{sec:propositions}
+\begin{proposition}
+$x+y=z$
+\end{proposition}
+\mypropositions{Prop 1}
+
+\begin{proposition}
+$\alpha=1-x$
+\end{proposition}
+\mypropositions{Prop 2}
 
 \newpage
 \section{Citations}
@@ -410,6 +432,9 @@ Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
 
 \newpage
 \listofmylemmas
+
+\newpage
+\listofmypropositions
 
 \newpage
 \section{Acknowledgements}
