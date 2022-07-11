@@ -49,6 +49,9 @@
 % very useful for hyperlinks
 \usepackage{hyperref}
 
+% required for bibtex URLs
+\usepackage{url}
+
 % to create a list of equations
 \usepackage{tocloft}
 \setlength{\cfttabindent}{0in}
@@ -408,7 +411,7 @@ $\alpha=1-x$
 \label{sec:citations}
 The formatting of the bibliography is not quite what I wish. I will explore bibtex for this. For now, here is how to site articles, books, and online references.
 
-Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
+The definitive book on MSA is by Wheeler \cite{wheeler2006}. The definitive book on SPC is by Wheeler \cite{wheeler2004}. The original article on Taguchi indices was by Russell Boyles \cite{boyles1991}. A very good article on the $C_\text{pm}$ index is found in Chen et.al. \cite{chan1988}. Gunter \cite{gunter1989}.
 
 \newpage
 \section{To do}
@@ -452,14 +455,9 @@ The author wishes to thank ...
 
 Add files, data, and other supporting information, and where it can be obtained.
 
-% use 9 if you have 1 to 9 items, 99 if you have 10 to 99 items, etc.
-\begin{thebibliography}{9}
-
-\bibitem{JD} Doe, John. 2000. Title of book.
-\bibitem{JS} Smith, John. 2013. \textit{Title of article}.
-\bibitem{JT} Thomas, John. 2022. \textit{Online reference}.
-
-\end{thebibliography}
+\newpage
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{pilon_gilles}
 
 \end{document}
-
