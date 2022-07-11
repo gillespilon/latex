@@ -57,7 +57,7 @@
 
 % set references indent
 
-% useful for definitions, theorems, corollaries, etc.
+% define theorem-like elements
 \theoremstyle{myenv}
 \theoremstyle{mytheorem}
 \newtheorem{theorem}{Theorem}
@@ -95,6 +95,13 @@
 \addcontentsline{thm}{mytheorems}{\protect\numberline{\thetheorem}#1}\par}
 \renewcommand{\cftthmtitlefont}{\normalfont\Large\bfseries}
 
+% create a list of definitions command
+\newcommand{\listdefinitionsname}{List of Definitions}
+\newlistof{mydefinitions}{def}{\listdefinitionsname}
+\newcommand{\mydefinitions}[1]{%
+\addcontentsline{def}{mydefinitions}{\protect\numberline{\thedefinition}#1}\par}
+\renewcommand{\cftdeftitlefont}{\normalfont\Large\bfseries}
+
 % create a list of corollaries command
 \newcommand{\listcorollariesname}{List of Corollaries}
 \newlistof{mycorollaries}{cor}{\listcorollariesname}
@@ -115,13 +122,6 @@
 \newcommand{\mypropositions}[1]{%
 \addcontentsline{prop}{mypropositions}{\protect\numberline{\theproposition}#1}\par}
 \renewcommand{\cftproptitlefont}{\normalfont\Large\bfseries}
-
-% create a list of definitions command
-\newcommand{\listdefinitionsname}{List of Definitions}
-\newlistof{mydefinitions}{def}{\listdefinitionsname}
-\newcommand{\mydefinitions}[1]{%
-\addcontentsline{def}{mydefinitions}{\protect\numberline{\thedefinition}#1}\par}
-\renewcommand{\cftdeftitlefont}{\normalfont\Large\bfseries}
 
 % this is the end of the preamble section
 
@@ -322,6 +322,15 @@ A = \begin{bmatrix}
 \end{flalign}
 
 \newpage
+\section{Theorems}
+\label{sec:theorems}
+
+\begin{theorem}[Fundamental Theorem of Calculus]
+\label{thm:ftc}
+If $f$ is continuous on the interval $[a,b]$, then \[\frac{d}{dx}\int_a^x f(t)dx=f(x)\] for all $a\le x\le b$.
+\end{theorem}
+\mytheorems{Fundamental theorem of calculus}
+
 \section{Definitions}
 \label{sec:definitions}
 
@@ -336,15 +345,6 @@ Let $f$ be a function defined on an open interval containing $x=a$, but perhaps 
 The \textit{derivative} of $f$ is defined to be $\displaystyle f^\prime(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$, if this limit exists.
 \end{definition}
 \mydefinitions{Derivative of f}
-
-\section{Theorems}
-\label{sec:theorems}
-
-\begin{theorem}[Fundamental Theorem of Calculus]
-\label{thm:ftc}
-If $f$ is continuous on the interval $[a,b]$, then \[\frac{d}{dx}\int_a^x f(t)dx=f(x)\] for all $a\le x\le b$.
-\end{theorem}
-\mytheorems{Fundamental theorem of calculus}
 
 \section{Corollaries}
 \label{sec:corollaries}
@@ -425,10 +425,10 @@ Blah blah \cite{JD} and blah blah \cite{JS} and blah blah \cite{JT}.
 \listofmyequations
 
 \newpage
-\listofmydefinitions
+\listofmytheorems
 
 \newpage
-\listofmytheorems
+\listofmydefinitions
 
 \newpage
 \listofmycorollaries
