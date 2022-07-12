@@ -61,8 +61,8 @@
 \usepackage{booktabs}
 
 % useful for the bibliography
-% the following changes the section name from the default References
-% \renewcommand{\refname}{Bibliography}
+\usepackage[style=numeric]{biblatex}
+\addbibresource{pilon_gilles.bib}
 
 % define theorem-like elements
 \theoremstyle{myenv}
@@ -411,9 +411,10 @@ $\alpha=1-x$
 \newpage
 \section{Citations}
 \label{sec:citations}
-The formatting of the bibliography is not quite what I wish. I will explore bibtex for this. For now, here is how to site articles, books, and online references.
 
-The definitive book on MSA is by Wheeler \cite{wheeler2006}. The definitive book on SPC is by Wheeler \cite{wheeler2004}. The original article on Taguchi indices was by Russell Boyles \cite{boyles1991}[pages 1-5]. A very good article on the $C_\text{pm}$ index is found in Chen et.al. \cite{chan1988}. Gunter \cite{gunter1989}.
+% The definitive book on MSA is by Wheeler \cite{wheeler2006}. The definitive book on SPC is by Wheeler \cite{wheeler2004}. The original article on Taguchi indices was by Russell Boyles \cite{boyles1991}. A very good article on the $C_\text{pm}$ index is found in Chen et.al. \cite{chan1988}. Gunter \cite{gunter1989}.
+
+Here is a single citation. \cite{wheeler2006}
 
 \newpage
 \section{To do}
@@ -458,9 +459,9 @@ The author wishes to thank ...
 Add files, data, and other supporting information, and where it can be obtained.
 
 \newpage
+\section{References}
 \nocite{*}
-\bibliographystyle{plain}
-\bibliography{pilon_gilles}
+\printbibliography[heading=none]
 \label{sec:references}
 
 \end{document}
