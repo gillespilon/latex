@@ -66,6 +66,7 @@
 
 % used to create tables
 \usepackage{booktabs}
+\usepackage{multirow}
 
 % useful for the bibliography
 \usepackage[style=numeric]{biblatex}
@@ -355,30 +356,40 @@ A = \begin{bmatrix}
 
 Greek letters can be inserted in mathematics and text using Unicode characters. In Neovim, the sequence is `ControlKey + v uhhhh` where `hhhh` is the Unicode.
 
-alpha 03b1 α 0391 Α \\
-beta 03b2 β 0392 Β \\
-gamma 03b3 γ 0393 Γ \\
-delta 03b4 δ 0394 Δ \\
-epsilon 03b5 ε 0395 Ε \\
-zeta 03b6 ζ 0396 Ζ \\
-eta 03b7 η 0397 Η \\
-theta 03b8 θ 0398 Θ \\
-iota 03b9 ι 0399 Ι \\
-kappa 03b1 α 039a Κ \\
-lambda 03bb λ 039b Λ \\
-mu 03bc μ 039c Μ \\
-nu 03bd ν 039d Ν \\
-xi 03be ξ 039e Ξ \\
-omicron o O \\
-pi 03c0 π 03ao Π \\
-rho 03c1 ρ 03a1 Ρ \\
-sigma 03c3 σ 03a3 Σ \\
-tau 03c4 τ 03a4 Τ \\
-upsilon 03c5 υ 03a5 Υ \\
-phi 03c6 φ 03a6 Φ \\
-chi 03c7 χ 03a7 Χ \\
-psi 03c8 ψ 03a8 Ψ \\
-omega 03c9 ω 03a9 Ω \\
+\begin{table}[H]
+\begin{flushleft}
+\begin{tabular}{lcccc}
+\toprule
+letter & code & miniscule & code & majuscule \\
+\midrule
+alpha   & 03b1 & α & 0391 & Α \\
+beta    & 03b2 & β & 0392 & Β \\
+gamma   & 03b3 & γ & 0393 & Γ \\
+delta   & 03b4 & δ & 0394 & Δ \\
+epsilon & 03b5 & ε & 0395 & Ε \\
+zeta    & 03b6 & ζ & 0396 & Ζ \\
+eta     & 03b7 & η & 0397 & Η \\
+theta   & 03b8 & θ & 0398 & Θ \\
+iota    & 03b9 & ι & 0399 & Ι \\
+kappa   & 03b1 & α & 039a & Κ \\
+lambda  & 03bb & λ & 039b & Λ \\
+mu      & 03bc & μ & 039c & Μ \\
+nu      & 03bd & ν & 039d & Ν \\
+xi      & 03be & ξ & 039e & Ξ \\
+omicron &      & o &      & O \\
+pi      & 03c0 & π & 03ao & Π \\
+rho     & 03c1 & ρ & 03a1 & Ρ \\
+sigma   & 03c3 & σ & 03a3 & Σ \\
+tau     & 03c4 & τ & 03a4 & Τ \\
+upsilon & 03c5 & υ & 03a5 & Υ \\
+phi     & 03c6 & φ & 03a6 & Φ \\
+chi     & 03c7 & χ & 03a7 & Χ \\
+psi     & 03c8 & ψ & 03a8 & Ψ \\
+omega   & 03c9 & ω & 03a9 & Ω \\
+\bottomrule
+\end{tabular}
+\end{flushleft}
+\end{table}
 
 \subsection{Greek mathematics}
 \label{sec:greek_mathematics}
