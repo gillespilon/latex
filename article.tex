@@ -47,7 +47,14 @@
 \usepackage{amsmath, amsthm, amssymb}
 
 % very useful for hyperlinks
-\usepackage{hyperref}
+\usepackage[unicode]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
+
+% useful for Greek letters in text mode
+\usepackage[cbgreek]{textgreek}
 
 % required for bibtex URLs
 \usepackage{url}
@@ -94,6 +101,13 @@
 \newcommand{\myequations}[1]{%
 \addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
 \renewcommand{\cftequtitlefont}{\normalfont\Large\bfseries}
+
+% create a list of Greek letters command
+\newcommand{\listgreekname}{List of Greek Letters}
+\newlistof{mygreek}{grk}{\listgreekname}
+\newcommand{\mygreek}[1]{%
+\addcontentsline{grk}{mygreek}{\protect\numberline{\thegreek}#1}\par}
+\renewcommand{\cftgrktitlefont}{\normalfont\Large\bfseries}
 
 % create a list of theorems command
 \newcommand{\listtheoremsname}{List of Theorems}
@@ -180,15 +194,9 @@ Hyperlinks to external URLs can be easily added. For example, see \href{https://
 \label{sec:unordered_list}
 \begin{itemize}
     \item Illinois
-        \begin{itemize}
-            \item Chicago
-            \item Naperville
-        \end{itemize}
+        \begin{itemize} \item Chicago \item Naperville \end{itemize}
     \item Kentucky
-        \begin{itemize}
-            \item Lexington
-            \item Louisville
-        \end{itemize}
+        \begin{itemize} \item Lexington \item Louisville \end{itemize}
 \end{itemize}
 
 \subsection{Ordered list}
@@ -337,6 +345,66 @@ A = \begin{bmatrix}
 0 &0 &0 &1
 \end{bmatrix}&&
 \end{flalign}
+
+\newpage
+\section{Greek letters}
+\label{sec:greek_letters}
+
+\subsection{Greek mathematics}
+\label{sec:greek_mathematics}
+
+alpha $\alpha$ A \\
+beta $\beta$ B \\
+gamma $\gamma$ $\Gamma$ \\
+delta $\delta$ $\Delta$ \\
+epsilon$\epsilon$ E \\
+zeta $\zeta$ Z \\
+eta $\eta$ H\\
+theta $\theta$ $\Theta$ \\
+iota $\iota$ I \\
+kappa $\kappa$ K \\
+lambda $\lambda$ $\Lambda$ \\
+mu $\mu$ M \\
+nu $\nu$ N \\
+xi $\xi$ $\Xi$ \\
+omicron o O \\
+pi $\pi$ $\Pi$\\
+rho $\rho$ P \\
+sgima $\sigma$ $\Sigma$ \\
+tau $\tau$ T \\
+upsilon $\upsilon$ $\Upsilon$ \\
+phi $\phi$ $\Phi$ \\
+chi $\chi$ X \\
+psi $\psi$ $\Psi$ \\
+omega $\omega$ $\Omega$ \\
+
+\subsection{Greek text}
+\label{sec:greek_text}
+
+alpha \textalpha \textAlpha \\
+beta \textbeta \textBeta \\
+gamma \textgamma \textGamma \\
+delta \textdelta \textDelta \\
+epsilon \textepsilon \textEpsilon \\
+zeta \textzeta \textZeta \\
+eta \texteta \textEta \\
+theta \texttheta \textTheta \\
+iota \textiota \textIota \\
+kappa \textkappa \textKappa \\
+lambda \textlambda \textLambda \\
+mu \textmu \textMu \\
+nu \textnu \textNu \\
+xi \textxi \textXi \\
+omicron o O \\
+pi \textpi \textPi \\
+rho \textrho \textRho \\
+sigma \textsigma \textSigma \\
+tau \texttau \textTau \\
+upsilon \textupsilon \textUpsilon \\
+phi \textphi \textPhi \\
+chi \textchi \textChi \\
+psi \textpsi \textPsi \\
+omega \textomega \textOmega \\
 
 \newpage
 \section{Theorems}
