@@ -351,7 +351,7 @@ A = \begin{bmatrix}
 \section{Greek letters}
 \label{sec:greek_letters}
 
-\subsection{Greek unicode}
+\subsection{Greek Unicode}
 \label{sec:greek_unicode}
 
 Greek letters can be inserted in mathematics and text using Unicode characters. In Neovim, the sequence is `ControlKey + v uhhhh` where `hhhh` is the Unicode.
@@ -388,36 +388,52 @@ psi     & 03c8 & ψ & 03a8 & Ψ \\
 omega   & 03c9 & ω & 03a9 & Ω \\
 \bottomrule
 \end{tabular}
+\label{tab:greek_unicode}
+\caption{Greek Unicode}
 \end{flushleft}
 \end{table}
 
 \subsection{Greek mathematics}
 \label{sec:greek_mathematics}
 
-alpha $\alpha$ A \\
-beta $\beta$ B \\
-gamma $\gamma$ $\Gamma$ \\
-delta $\delta$ $\Delta$ \\
-epsilon$\epsilon$ E \\
-zeta $\zeta$ Z \\
-eta $\eta$ H\\
-theta $\theta$ $\Theta$ \\
-iota $\iota$ I \\
-kappa $\kappa$ K \\
-lambda $\lambda$ $\Lambda$ \\
-mu $\mu$ M \\
-nu $\nu$ N \\
-xi $\xi$ $\Xi$ \\
-omicron o O \\
-pi $\pi$ $\Pi$\\
-rho $\rho$ P \\
-sgima $\sigma$ $\Sigma$ \\
-tau $\tau$ T \\
-upsilon $\upsilon$ $\Upsilon$ \\
-phi $\phi$ $\Phi$ \\
-chi $\chi$ X \\
-psi $\psi$ $\Psi$ \\
-omega $\omega$ $\Omega$ \\
+Greek letters can be inserted in mathematics. These are naturally italicized.
+
+\begin{table}[H]
+\begin{flushleft}
+\begin{tabular}{lcccc}
+\toprule
+letter & code & miniscule & code & majuscule \\
+\midrule
+alpha   & \$\textbackslash alpha\$   & $\alpha$   & \$A\$                      & $A$ \\
+beta    & \$\textbackslash beta\$    & $\beta$    & \$B\$                      & $B$ \\
+gamma   & \$\textbackslash gamma\$   & $\gamma$   & \$\textbackslash Gamma\$   & $\Gamma$ \\
+delta   & \$\textbackslash delta\$   & $\delta$   & \$\textbackslash Delta\$   & $\Delta$ \\
+epsilon & \$\textbackslash epsilon\$ & $\epsilon$ & \$E\$                      & $E$ \\
+zeta    & \$\textbackslash zeta\$    & $\zeta$    & \$Z\$                      & $Z$ \\
+eta     & \$\textbackslash eta\$     & $\eta$     & \$H\$                      & $H$ \\
+theta   & \$\textbackslash theta\$   & $\theta$   & \$\textbackslash Theta\$   & $\Theta$ \\
+iota    & \$\textbackslash iota\$    & $\iota$    & \$I\$                      & $I$ \\
+kappa   & \$\textbackslash kappa\$   & $\kappa$   & \$K\$                      & $K$ \\
+lambda  & \$\textbackslash lambda\$  & $\lambda$  & \$\textbackslash Lambda\$  & $\Lambda$ \\
+mu      & \$\textbackslash mu\$      & $\mu$      & \$M\$                      & $M$ \\
+nu      & \$\textbackslash nu\$      & $\nu$      & \$N\$                      & $N$ \\
+xi      & \$\textbackslash xi\$      & $\xi$      & \$\textbackslash Xi\$      & $\Xi$ \\
+omicron & \$o\$                      & $o$        & \$O\$                      & $O$ \\
+pi      & \$\textbackslash pi\$      & $\pi$      & \$\textbackslash Pi\$      & $\Pi$ \\
+rho     & \$\textbackslash rho\$     & $\rho$     & \$P\$                      & $P$ \\
+sigma   & \$\textbackslash sigma\$   & $\sigma$   & \$\textbackslash Sigma\$   & $\Sigma$ \\
+tau     & \$\textbackslash tau\$     & $\tau$     & \$T\$                      & $T$ \\
+upsilon & \$\textbackslash upsilon\$ & $\upsilon$ & \$\textbackslash Upsilon\$ & $\Upsilon$ \\
+phi     & \$\textbackslash phi\$     & $\phi$     & \$\textbackslash Phi\$     & $\Phi$ \\
+chi     & \$\textbackslash chi\$     & $\chi$     & \$X\$                      & $X$ \\
+psi     & \$\textbackslash psi\$     & $\psi$     & \$\textbackslash Psi\$     & $\Psi$ \\
+omega   & \$\textbackslash omega\$   & $\omega$   & \$\textbackslash Omega\$   & $\Omega$ \\
+\bottomrule
+\end{tabular}
+\label{tab:greek_mathematics}
+\caption{Greek mathematics}
+\end{flushleft}
+\end{table}
 
 \subsection{Greek text}
 \label{sec:greek_text}
