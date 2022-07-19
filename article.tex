@@ -47,17 +47,8 @@
 \usepackage{amsmath, amsthm, amssymb}
 
 % very useful for hyperlinks
-\usepackage[unicode]{hyperref}
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue
-}
-
 % useful for Greek letters in text mode
 \usepackage[cbgreek]{textgreek}
-
-% required for bibtex URLs
-\usepackage{url}
 
 % to create a list of equations
 \usepackage{tocloft}
@@ -148,6 +139,14 @@
 % useful for epigraphs
 \usepackage{epigraph}
 
+\usepackage[unicode]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=magenta,
+    citecolor=green,
+    linkcolor=red
+}
+
 % this is the end of the preamble section
 
 \begin{document}
@@ -187,7 +186,7 @@ Some of the \textbf{greatest} \textit{discoveries} in \underline{science} were m
 
 \section{URLs}
 \label{sec:urls}
-Hyperlinks within the document can be easily added. For example, see Graphics \ref{sec:graphics} and Anatomy of a matplotlib figure \ref{fig:anatomy_of_a_matplotlib_figure} and Definition of a limit \ref{def:limit}.
+Hyperlinks within the document can be easily added. For example, \hyperref[sec:graphics]{see Graphics} and \hyperref[fig:anatomy_of_a_matplotlib_figure]{Anatomy of a matplotlib figure} and \hyperref[def:limit]{Definition of a limit}.
 
 Hyperlinks to external URLs can be easily added. For example, see \href{https://en.wikipedia.org/wiki/Latex}{Wikipedia \LaTeX}.
 \section{Lists}
@@ -570,13 +569,6 @@ Here is a single citation without prenote and postnote. The definitive book on M
 Here is a single citation with prenote only. The definitive book on SPC is by \cite[Wheeler][]{wheeler2006}.
 
 Here is a single citation with prenote and postnote. For further details on $C_\text{pm}$, \cite[see][pages 1-10]{chan1988}.
-
-\newpage
-\section{To do}
-
-\begin{itemize}
-    \item list to do items here
-\end{itemize}
 
 \newpage
 \listoffigures
