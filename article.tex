@@ -233,6 +233,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \section{Tables}
 \label{sec:tables}
 
+\subsection{Simple table}
+\label{sec:simple_table}`
+
 \begin{table}[H]
 \begin{flushleft}
 \begin{tabular}{lcccccc}
@@ -248,21 +251,31 @@ Visigothorum & 021 & 229 & 678 & 123 & 456 & 678 \\
 \end{flushleft}
 \end{table}
 
+\subsection{Multirow table}
+\label{sec:multirow_table}`
 \begin{table}[H]
-\begin{flushleft}
-\begin{tabular}{ccc}
+\footnotesize
+\centering
+\begin{tabular}{llll}
 \toprule
-$A$      & $B$ & $ A \land B$ \\
+                                           & \textbf{Process requirement}            & \textbf{Sampling}                        & \textbf{Comments} \\
 \midrule
-T        & T   & T \\
-T        & F   & F \\
-F        & T   & F \\
-F        & F   & F \\
+\multirow[t]{4}{*}{$C_\text{pk}$}          & - Stable and predictable variation      & - Rational                               & - Possible cost to increasing $C_\text{pk}$ \\
+                                           & - Normal distribution                   & - Representative of process              & - Wide confidence interval \\
+                                           & - Need at least one specification limit & - Ensure same process conditions         & \\
+                                           &                                         & - No identifiable condition changes      & \\
+\multirow[t]{4}{*}{$P_\text{pk}$}          & - Stable and predictable variation      & - Random                                 & - Possible cost to increasing ppk \\
+                                           & - Normal distribution                   & - Sufficiently large, representative     & - Wide confidence interval \\
+                                           & - Need at least one specification limit & - Ensure same process conditions         & - Easiest formulae to explain \\
+                                           &                                         & - No identifiable condition changes      & \\
+\multirow[t]{4}{*}{$C_\text{pm}$}          & - Stable and predictable variation      & - Same as $C_\text{pk}$ or $P_\text{pk}$ & - $C_\text{pm}$ penalizes for being off-target \\
+                                           & - Normal distribution                   &                                          & - Wide confidence interval \\
+                                           & - Need at least one specification limit &                                          & - Most difficult formulae to explain \\
+                                           & - Need specification target             &                                          & \\
 \bottomrule
 \end{tabular}
-\label{tab:boolean_truth_table}
-\caption{Boolean truth table}
-\end{flushleft}
+\caption{Comparison of capability indices}
+\label{tab:comparison_capability_indices}
 \end{table}
 
 \newpage
