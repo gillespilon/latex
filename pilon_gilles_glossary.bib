@@ -1,68 +1,74 @@
 % Encoding: UTF-8
 @dualabbreviationentry{aad,
-    short = {AAD},
-    long = {average absolute deviation},
-    description = {This measure does not square the distance from the average, so it is less affected by extreme observations than are the \gls{variance} and the \gls{standard_deviation}. $\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$}
+short = {AAD},
+long = {average absolute deviation},
+description = {This measure does not square the distance from the average, so it is less affected by extreme observations than are the \gls{variance} and the \gls{standard_deviation}. $\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$}
 }
 
 @dualabbreviationentry{anome,
-  short = {ANOME},
-  description = {A chart that compares the \gls{average_statistic} of each level to the overall average},
-  long = {analysis of main effects}
+short = {ANOME},
+description = {A chart that compares the \gls{average_statistic} of each level to the overall average},
+long = {analysis of main effects}
 }
 
 @dualabbreviationentry{anomr,
-  short = {ANOMR},
-  description = {A chart that compares the average range of each level to the overall range},
-  long = {analysis of mean ranges}
+short = {ANOMR},
+description = {A chart that compares the average range of each level to the overall range},
+long = {analysis of mean ranges}
 }
 
 @dualabbreviationentry{cp,
-  short = {$C_\text{p}$},
-  description = {Compares the width of the process specification to the width of the process variation},
-  long = {process capability index two-sided (rational sample)}
+short = {$C_\text{p}$},
+description = {Compares the width of the process specification to the width of the process variation},
+long = {process capability index two-sided (rational sample)}
 }
 
 @dualabbreviationentry{cpk,
-  short = {$C_\text{pk}$},
-  description = {Calculates the distance from each specification limit to the \gls{average_statistic} and compares then to the width of the process variation},
-  long = {process capability index one-sided (rational sample)}
+short = {$C_\text{pk}$},
+description = {Calculates the distance from each specification limit to the \gls{average_statistic} and compares then to the width of the process variation},
+long = {process capability index one-sided (rational sample)}
 }
 
 @dualabbreviationentry{cpm,
-  short = {$C_\text{pm}$},
-  description = {Calculates process capability with respect to deviation from the \gls{average_statistic} and deviation from the target},
-  long = {process capability index loss function (random sample)}
+short = {$C_\text{pm}$},
+description = {Calculates process capability with respect to deviation from the \gls{average_statistic} and deviation from the target},
+long = {process capability index loss function (random sample)}
 }
 
 @dualabbreviationentry{icc,
-  short = {ICC},
-  description = {Describes how strongly units in the same group resemble each other},
-  long = {intraclass correlation coefficient}
+short = {ICC},
+description = {Describes how strongly units in the same group resemble each other},
+long = {intraclass correlation coefficient}
+}
+
+@dualabbreviationentry{mad,
+short = {MAD},
+description = {This is a variation of the \gls{aad} that is even less affected by extremes in the tail because the data in the tails have less influence on the calculation of the median than they do on the \gls{average_statistic}. $\text{MAD} = \text{median}\left(|Y_i - \tilde{Y}|\right)$},
+long = {median absolute deviation}
 }
 
 @dualabbreviationentry{msa,
-  short = {MSA},
-  description = {Methods to evaluate measurements systems, to understand the causes of measurement variation},
-  long = {Measurement System Analysis}
+short = {MSA},
+description = {Methods to evaluate measurements systems, to understand the causes of measurement variation},
+long = {Measurement System Analysis}
 }
 
 @dualabbreviationentry{pp,
-  short = {$P_\text{p}$},
-  description = {Compares the width of the process specification to the width of the process variation},
-  long = {process capability index two-sided (random sample)}
+short = {$P_\text{p}$},
+description = {Compares the width of the process specification to the width of the process variation},
+long = {process capability index two-sided (random sample)}
 }
 
 @dualabbreviationentry{ppk,
-  short = {$P_\text{pk}$},
-  description = {Calculates the distance from each specification limit to the \gls{average_statistic} and compares then to the width of the process variation},
-  long = {process capability index one-sided (random sample)}
+short = {$P_\text{pk}$},
+description = {Calculates the distance from each specification limit to the \gls{average_statistic} and compares then to the width of the process variation},
+long = {process capability index one-sided (random sample)}
 }
 
 @entry{average_chart,
-  plural = {average charts},
-  name = {average chart},
-  description = {It is a process behaviour chart that plots the \gls{average_statistic} of a subgroup of values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
+plural = {average charts},
+name = {average chart},
+description = {It is a process behaviour chart that plots the \gls{average_statistic} of a subgroup of values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
 }
 
 @entry{average_statistic,
@@ -89,20 +95,20 @@ description = {The subgroup averages are used to find an indirect estimate of th
 }
 
 @entry{bias_linearity,
-    name = {bias and linearity},
-    description = {This is the difference between the measurement result and its unknown, true values. It can be eliminated by calibration to a standard. Bias is an \gls{average_statistic} over all references values. Linearity or non-linearity is a difference in bias across all reference values.}
+name = {bias and linearity},
+description = {This is the difference between the measurement result and its unknown, true values. It can be eliminated by calibration to a standard. Bias is an \gls{average_statistic} over all references values. Linearity or non-linearity is a difference in bias across all reference values.}
 }
 
 @entry{chi_square_distribution,
-  plural = {chi-square distributions},
-  name = {chi-square distribution},
-  description = {It is the distribution of a sum of the squares of k independent standard normal random variables with k degrees of freedom.}
+plural = {chi-square distributions},
+name = {chi-square distribution},
+description = {It is the distribution of a sum of the squares of k independent standard normal random variables with k degrees of freedom.}
 }
 
 @entry{confidence_interval,
-  plural = {confidence intervals},
-  name = {confidence interval},
-  description = {In frequentist statistics, it is a range of estimates for an unknown parameter, interval calculated from values in a sample.
+plural = {confidence intervals},
+name = {confidence interval},
+description = {In frequentist statistics, it is a range of estimates for an unknown parameter, interval calculated from values in a sample.
 }
 }
 
@@ -114,9 +120,9 @@ description = {This is a limit of predictability for the data plotted on the rel
 }
 
 @entry{dependent_variable,
-  plural = {dependent variables},
-  name = {dependent variable},
-  description = {The result of varying the values of other variables. In $y = mX + b$, y is the dependent variable.}
+plural = {dependent variables},
+name = {dependent variable},
+description = {The result of varying the values of other variables. In $y = mX + b$, y is the dependent variable.}
 }
 
 @entry{dispersion,
@@ -128,41 +134,41 @@ description = {A sample of values will not (usually) have all values identical. 
 @entry{dispersion_statistic,
 plural = {dispersion statistics},
 name = {dispersion statistic},
-description = {It is a statistic that estimates the spread or variability of the data. It is also called a measure of scale. Examples include the variance, the \gls{standard_deviation}, the \gls{range_statistic}, the \gls{aad}, the median absolute deviation, and the interquartile range.}
+description = {It is a statistic that estimates the spread or variability of the data. It is also called a measure of scale. Examples include the variance, the \gls{standard_deviation}, the \gls{range_statistic}, the \gls{aad}, the \gls{mad}, and the interquartile range.}
 }
 
 @entry{distance_to_nearest_specification,
-  name = {distance to nearest specification (sigma level)},
-  description = {The difference between the \gls{location} statistic and the closest specification limit, divided by the \gls{dispersion} statistic (e.g. the \gls{standard_deviation})}
+name = {distance to nearest specification (sigma level)},
+description = {The difference between the \gls{location} statistic and the closest specification limit, divided by the \gls{dispersion} statistic (e.g. the \gls{standard_deviation})}
 }
 
 @entry{distance_to_target,
-  name = {distance to target},
-  description = {The difference between the specification target and the \gls{average_statistic} is the difference you must adjust to aim the process correctly.}
+name = {distance to target},
+description = {The difference between the specification target and the \gls{average_statistic} is the difference you must adjust to aim the process correctly.}
 }
 
 @entry{dot_plot,
-  plural = {dot plots},
-  name = {dot plot},
-  description = {A chart in which dots are used to depict the quantitative values (e.g. counts) associated with categorical variables}
+plural = {dot plots},
+name = {dot plot},
+description = {A chart in which dots are used to depict the quantitative values (e.g. counts) associated with categorical variables}
 }
 
 @entry{hypothesis_test,
-  plural = {hypothesis tests},
-  name = {hypothesis test},
-  description = {A method for proving that an observed difference was not due to random chance}
+plural = {hypothesis tests},
+name = {hypothesis test},
+description = {A method for proving that an observed difference was not due to random chance}
 }
 
 @entry{independent_variable,
-  plural = {independent variables},
-  name = {independent variable},
-  description = {The values that are deliberately or randomly changed. In $y = mX + b$, x is the independent variable.}
+plural = {independent variables},
+name = {independent variable},
+description = {The values that are deliberately or randomly changed. In $y = mX + b$, x is the independent variable.}
 }
 
 @entry{individuals_chart,
-  plural = {individuals charts},
-  name = {individuals chart},
-  description = {It is a process behaviour chart that plots the single values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
+plural = {individuals charts},
+name = {individuals chart},
+description = {It is a process behaviour chart that plots the single values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
 }
 
 @entry{location,
@@ -178,60 +184,60 @@ description = {It is a statistic that estimates the central value that best desc
 }
 
 @entry{moving_range_chart,
-  name = {moving range chart},
-  description = {{It is a process behaviour chart that plots the difference between successive pairs of values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
-    plural={moving range charts}}
+name = {moving range chart},
+description = {{It is a process behaviour chart that plots the difference between successive pairs of values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
+plural={moving range charts}}
 }
 
 @entry{nelsons_rules,
-  name = {Nelson's Rules},
-  description = {They are a set of process behaviour chart rules for assessing statistical control.}
+name = {Nelson's Rules},
+description = {They are a set of process behaviour chart rules for assessing statistical control.}
 }
 
 @entry{normal_distribution,
-  plural = {normal distributions},
-  name = {normal distribution},
-  description = {A type of continuous probability distribution for a real-valued random variable}
+plural = {normal distributions},
+name = {normal distribution},
+description = {A type of continuous probability distribution for a real-valued random variable}
 }
 
 @entry{outlier,
-  plural = {outliers},
-  name = {outlier},
-  description = {It is a data point that differs significantly from other observations. An outlier may be due to variability in the measurement or it may indicate experimental error. An outlier can cause serious problems in statistical analyses.}
+plural = {outliers},
+name = {outlier},
+description = {It is a data point that differs significantly from other observations. An outlier may be due to variability in the measurement or it may indicate experimental error. An outlier can cause serious problems in statistical analyses.}
 }
 
 @entry{parallelism_chart,
-  plural = {parallelism charts},
-  name = {parallelism chart},
-  description = {It is a process behaviour chart that plots the lines from the average chart and puts them on top of each other. It is used in measurement system analysis. Differences for any part indicate an operator bias relative to other operators.}
+plural = {parallelism charts},
+name = {parallelism chart},
+description = {It is a process behaviour chart that plots the lines from the average chart and puts them on top of each other. It is used in measurement system analysis. Differences for any part indicate an operator bias relative to other operators.}
 }
 
 @entry{process_capability,
-  name = {process capability},
-  description = {The ability of a process to meet a performance standard}
+name = {process capability},
+description = {The ability of a process to meet a performance standard}
 }
 
 @entry{process_capability_index,
-  plural = {process capability indices},
-  name = {process capability index},
-  description = {The ratio of a specification measure and a \gls{dispersion} measure}
+plural = {process capability indices},
+name = {process capability index},
+description = {The ratio of a specification measure and a \gls{dispersion} measure}
 }
 
 @entry{probable_error,
-  name = {probable error},
-  description = {Also called resolution. It is the interval within which a single measurement might occur 50 \% of the time, $\pm 0.6745 \times \sigma_\text{pure error}$}
+name = {probable error},
+description = {Also called resolution. It is the interval within which a single measurement might occur 50 \% of the time, $\pm 0.6745 \times \sigma_\text{pure error}$}
 }
 
 @entry{process_behaviour_chart,
-  name = {process behaviour chart},
-  description = {{It is used to determine if the variation of a sample statistic of a process is stable and predictable, that is, in a state of statistical control. It is also called a Shewhart chart and a control chart.}
-    plural={process behaviour charts}}
+name = {process behaviour chart},
+description = {{It is used to determine if the variation of a sample statistic of a process is stable and predictable, that is, in a state of statistical control. It is also called a Shewhart chart and a control chart.}
+plural={process behaviour charts}}
 }
 
 @entry{range_chart,
-  plural = {range charts},
-  name = {range chart},
-  description = {It is a process behaviour chart that plots the \gls{range_statistic} of a subgroup of values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
+plural = {range charts},
+name = {range chart},
+description = {It is a process behaviour chart that plots the \gls{range_statistic} of a subgroup of values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
 }
 
 @entry{range_statistic,
@@ -241,14 +247,14 @@ description = {It is the difference between the largest and smallest value in a 
 }
 
 @entry{sources_of_variation,
-  name = {sources of variation},
-  description = {These are the factors in a process that cause variation on the dependent variable. These factors may vary in a deliberate manner (fixed effects), random manner (random effects), or mixed effects (fixed and random factors)}
+name = {sources of variation},
+description = {These are the factors in a process that cause variation on the dependent variable. These factors may vary in a deliberate manner (fixed effects), random manner (random effects), or mixed effects (fixed and random factors)}
 }
 
 @entry{specification,
-  plural = {specifications},
-  name = {specification},
-  description = {In the context of measurement system analysis, process capability, and process control, a specification is a lower limit, a target, and an upper limit}
+plural = {specifications},
+name = {specification},
+description = {In the context of measurement system analysis, process capability, and process control, a specification is a lower limit, a target, and an upper limit}
 }
 
 @entry{standard_deviation,
@@ -258,30 +264,30 @@ description = {is the square root of the variance. $s = \sqrt{\frac{\sum\limits_
 }
 
 @entry{statistical_control,
-  name = {statistical control},
-  description = {A process is said to be in a state of statistical control if the variation for both charts is stable and predictable. This means that no points fail various control chart rules, such as Nelson's rules, and no systematic patterns of variation are present. It is also called process stability.}
+name = {statistical control},
+description = {A process is said to be in a state of statistical control if the variation for both charts is stable and predictable. This means that no points fail various control chart rules, such as Nelson's rules, and no systematic patterns of variation are present. It is also called process stability.}
 }
 
 @entry{taguchi_loss_function,
-  name = {Taguchi Loss Function},
-  description = {It is a graphical depiction of loss to describe a phenomenon affecting the value of products produced by a company. It was developed by the Japanese business statistician Genichi Taguchi.}
+name = {Taguchi Loss Function},
+description = {It is a graphical depiction of loss to describe a phenomenon affecting the value of products produced by a company. It was developed by the Japanese business statistician Genichi Taguchi.}
 }
 
 @entry{test_retest_error,
-  name = {test-retest error},
-  description = {It is the consistency of operators making repeated measurements of the same characteristic on the same part with the same measuring instrument. It is a measure of the common cause variation inherent in the measurement system. It also is used to describe the consistency of a single instrument in making repeated measurements of the same part.}
+name = {test-retest error},
+description = {It is the consistency of operators making repeated measurements of the same characteristic on the same part with the same measuring instrument. It is a measure of the common cause variation inherent in the measurement system. It also is used to describe the consistency of a single instrument in making repeated measurements of the same part.}
 }
 
 @entry{type_i_error,
-  plural = {Type I errors},
-  name = {type I error},
-  description = {It is incorrectly rejecting a null hypothesis. It is the probability of saying something is different when in fact it is not. We find a difference that isn’t really there. It is also called alpha risk, producer's risk, and false positive.}
+plural = {Type I errors},
+name = {type I error},
+description = {It is incorrectly rejecting a null hypothesis. It is the probability of saying something is different when in fact it is not. We find a difference that isn’t really there. It is also called alpha risk, producer's risk, and false positive.}
 }
 
 @entry{type_ii_error,
-  plural = {Type II errors},
-  name = {type II error},
-  description = {It is incorrectly failing to reject a null hypothesis. It is the probability of saying something is not different when in fact it is. We fail to find a difference when there is one. It is also called beta risk, consumer’s risk, and false negative. It is used to calculate the power of the test (1-beta), as well as in calculations of sample size.}
+plural = {Type II errors},
+name = {type II error},
+description = {It is incorrectly failing to reject a null hypothesis. It is the probability of saying something is not different when in fact it is. We fail to find a difference when there is one. It is also called beta risk, consumer’s risk, and false negative. It is used to calculate the power of the test (1-beta), as well as in calculations of sample size.}
 }
 
 @entry{type_iii_error,
@@ -291,17 +297,17 @@ description = {It is correctly rejecting the wrong null hypothesis.}
 }
 
 @entry{variance,
-  plural={variances},
-  name = {variance},
-  description = {It is a measure of \gls{dispersion}, how far a set of numbers is spread out from their \gls{average_statistic}. It is the expectation of the squared deviation of a random variable from its population \gls{average_statistic} or sample \gls{average_statistic}. $s^2 = \frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}$}
+plural={variances},
+name = {variance},
+description = {It is a measure of \gls{dispersion}, how far a set of numbers is spread out from their \gls{average_statistic}. It is the expectation of the squared deviation of a random variable from its population \gls{average_statistic} or sample \gls{average_statistic}. $s^2 = \frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}$}
 }
 
 @entry{within_operator_error,
-    name = {within-operator error},
-    description = {It is the variation of measurements made by one operator on all parts}
+name = {within-operator error},
+description = {It is the variation of measurements made by one operator on all parts}
 }
 
 @entry{within_subgroup_error,
-    name = {within-subgroup error},
-    description = {It is the variation within a sample of parts. It is measured using the \gls{range_statistic}. Several subgroups of parts are sampled and measured. The \gls{average_range_statistic} is calculated to estimate the overall error.}
+name = {within-subgroup error},
+description = {It is the variation within a sample of parts. It is measured using the \gls{range_statistic}. Several subgroups of parts are sampled and measured. The \gls{average_range_statistic} is calculated to estimate the overall error.}
 }
