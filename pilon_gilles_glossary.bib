@@ -41,6 +41,12 @@ description = {Describes how strongly units in the same group resemble each othe
 long = {intraclass correlation coefficient}
 }
 
+@dualabbreviationentry{iqr,
+short = {IQR},
+description = {This is the value of the 75\textsuperscript{th} percentile minus the value of the 25\textsuperscript{th} percentile. This \gls{dispersion_statistic} attempts to measure the variability of points near the centre.},
+long = {interquartile range}
+}
+
 @dualabbreviationentry{mad,
 short = {MAD},
 description = {This is a variation of the \gls{aad} that is even less affected by extremes in the tail because the data in the tails have less influence on the calculation of the median than they do on the \gls{average_statistic}. $\text{MAD} = \text{median}\left(|Y_i - \tilde{Y}|\right)$},
@@ -134,7 +140,7 @@ description = {A sample of values will not (usually) have all values identical. 
 @entry{dispersion_statistic,
 plural = {dispersion statistics},
 name = {dispersion statistic},
-description = {It is a statistic that estimates the spread or variability of the data. It is also called a measure of scale. Examples include the variance, the \gls{standard_deviation}, the \gls{range_statistic}, the \gls{aad}, the \gls{mad}, and the interquartile range.}
+description = {It is a statistic that estimates the spread or variability of the data. It is also called a measure of scale. Examples include the variance, the \gls{standard_deviation}, the \gls{range_statistic}, the \gls{aad}, the \gls{mad}, and the \gls{iqr}.}
 }
 
 @entry{distance_to_nearest_specification,
@@ -180,7 +186,7 @@ description = {It is the central value of a sample of values or distribution.}
 @entry{location_statistic,
 plural = {location statistics},
 name = {location statistic},
-description = {It is a statistic that estimates the central value that best describes the data. Examples include the \gls{average}, median, and mode.}
+description = {It is a statistic that estimates the central value that best describes the data. Examples include the \gls{average_statistic}, median, and mode.}
 }
 
 @entry{moving_range_chart,
