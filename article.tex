@@ -2,7 +2,7 @@
 % See https://ctan.org/ for available packages and documentation.
 
 % this is the beginning of the preamble section
-% must always be first line of a <path.tex> document
+% the next line must always be first line of a <path.tex> document
 \documentclass[10pt, letterpaper, twoside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[sfdefault]{noto}
@@ -21,11 +21,16 @@
 \postauthor{\end{flushleft}}
 \predate{\begin{flushleft}\small}
 \postdate{\end{flushleft}}
+
+% edit the following line to "fix" the data
 \date{\today}
+
 % edit the following line for the title of the article
 \title{article title}
+
 % edit the following line for the author(s) of the article
 \author{article author}
+
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 \raggedbottom
@@ -47,6 +52,17 @@
 \usepackage{amsmath, amsthm, amssymb}
 
 % very useful for hyperlinks
+\usepackage[unicode]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=magenta,
+    citecolor=green
+}
+
+% required for bibtex URLs
+\usepackage{url}
+
 % useful for Greek letters in text mode
 \usepackage[cbgreek]{textgreek}
 
@@ -61,17 +77,26 @@
 
 % useful for the bibliography
 \usepackage[style=authoryear]{biblatex}
-\addbibresource{pilon_gilles_bibliography.bib}
+\addbibresource{~/documents/repositories/latex/pilon_gilles_bibliography.bib}
+
+% useful for the glossary
+\usepackage[toc, acronym, nopostdot, numberedsection, record=hybrid, shortcuts=ac, abbreviations]{glossaries-extra}
+\makeglossaries
+\GlsXtrLoadResources[
+    src={pilon_gilles_glossary.bib},
+    selection={recorded and deps},
+    sort=letter-nocase
+]
 
 % define theorem-like elements
-\theoremstyle{myenv}
-\theoremstyle{mytheorem}
+% \theoremstyle{myenv}
+% \theoremstyle{mytheorem}
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{axiom}[theorem]{Axiom}
-\theoremstyle{mydefinition}
+% \theoremstyle{mydefinition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{exercise}[theorem]{Exercise}
 \newtheorem{question}[theorem]{Question}
@@ -139,18 +164,20 @@
 % useful for epigraphs
 \usepackage{epigraph}
 
-\usepackage[unicode]{hyperref}
-\hypersetup{
-    colorlinks=true,
-    urlcolor=magenta,
-    citecolor=green,
-    linkcolor=red
-}
-
 % this is the end of the preamble section
 
 \begin{document}
 \maketitle
+
+\renewcommand{\epigraphflush}{flushleft}
+\renewcommand{\textflush}{flushleft}
+\renewcommand{\sourceflush}{flushleft}
+\epigraph{A picture is worth a thousand words.}{Anon}
+
+\begin{figure}[H]
+\includegraphics[scale=0.25, left]{../fot/matplotlib_anatomy_of_a_figure.png}
+\caption{Anatomy of a matplotlib figure}
+\end{figure}
 
 \begin{abstract}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -161,12 +188,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 \newpage
 \section{Introduction}\label{sec:introduction}
-\renewcommand{\epigraphflush}{flushleft}
-\renewcommand{\textflush}{flushleft}
-\renewcommand{\sourceflush}{flushleft}
-\epigraph{Remember, the objective is to take the right action on the process. No
-credit is given for finding the `right numbers.'}{Donald J. Wheeler}
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \section{Prior research}\label{sec:prior_research}
@@ -224,7 +245,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \newpage
 \section{Tables}\label{sec:tables}
 
-\subsection{Simple table}\label{sec:simple_table}`
+\subsection{Simple table}\label{sec:simple_table}
 
 \begin{table}[H]
 \begin{flushleft}
@@ -241,7 +262,7 @@ Visigothorum & 021 & 229 & 678 & 123 & 456 & 678 \\
 \end{flushleft}
 \end{table}
 
-\subsection{Multirow table}\label{sec:multirow_table}`
+\subsection{Multirow table}\label{sec:multirow_table}
 \begin{table}[H]
 \footnotesize
 \centering
@@ -270,7 +291,7 @@ Visigothorum & 021 & 229 & 678 & 123 & 456 & 678 \\
 \newpage
 \section{Mathematics}\label{sec:mathematics}
 
-\subsection{Inline mathematics}\label{sec:inline_mathematics}`
+\subsection{Inline mathematics}\label{sec:inline_mathematics}
 Examples of inline mathematics $\frac{a}{b}$, followed by text and another inline equation $\lim_{x\to 0}\frac{\sin x}{x}$=1 and more text $\sum_{k=0}^\infty \frac{1}{2^k}=2$ and finally much more text to cover many lines of a paragraph.
 
 \subsection{Display-style mathematics}\label{sec:display_style_mathematics}
@@ -440,32 +461,32 @@ Greek letters can be inserted as text.
 \begin{flushleft}
 \begin{tabular}{lcccc}
 \toprule
-letter & code & miniscule & code & majuscule \\
+letter                 & code                       & miniscule    & code                       & majuscule \\
 \midrule
-alpha    & \textbackslash textalpha   & \textalpha   & \textbackslash textAlpha   & \textAlpha \\
-beta     & \textbackslash textbeta    & \textbeta    & \textbackslash textBeta    & \textBeta \\
-gamma    & \textbackslash textgamma   & \textgamma   & \textbackslash textGamma   & \textGamma \\
-delta    & \textbackslash textdelta   & \textdelta   & \textbackslash textDelta   & \textDelta \\
-epsilon  & \textbackslash textepsilon & \textepsilon & \textbackslash textEpsilon & \textEpsilon \\
-zeta     & \textbackslash textzeta    & \textzeta    & \textbackslash textZeta    & \textZeta \\
-eta      & \textbackslash texteta     & \texteta     & \textbackslash textEta     & \textEta \\
-theta    & \textbackslash texttheta   & \texttheta   & \textbackslash textTheta   & \textTheta \\
-iota     & \textbackslash textiota    & \textiota    & \textbackslash textIota    & \textIota \\
-kappa    & \textbackslash textkappa   & \textkappa   & \textbackslash textKappa   & \textKappa \\
-lambda   & \textbackslash textlambda  & \textlambda  & \textbackslash textLambda  & \textLambda \\
-mu       & \textbackslash textmu      & \textmu      & \textbackslash textMu      & \textMu \\
-nu       & \textbackslash textnu      & \textnu      & \textbackslash textNu      & \textNu \\
-xi       & \textbackslash textxi      & \textxi      & \textbackslash textXi      & \textXi \\
-omicrdon & o                          & o            & O                          & O \\
-pi       & \textbackslash textpi      & \textpi      & \textbackslash textPi      & \textPi \\
-rho      & \textbackslash textrho     & \textrho     & \textbackslash textRho     & \textRho \\
-sigma    & \textbackslash textsigma   & \textsigma   & \textbackslash textSigma   & \textSigma \\
-tau    & \textbackslash texttau   & \texttau   & \textbackslash textTau   & \textTau \\
-upsilon    & \textbackslash textupsilon   & \textupsilon   & \textbackslash textUpsilon   & \textUpsilon \\
-phi    & \textbackslash textphi   & \textphi   & \textbackslash textPhi   & \textPhi \\
-chi    & \textbackslash textchi   & \textchi   & \textbackslash textChi   & \textChi \\
-psi    & \textbackslash textpsi   & \textpsi   & \textbackslash textPsi   & \textPsi \\
-omega    & \textbackslash textomega   & \textomega   & \textbackslash textOmega   & \textOmega \\
+alpha                  & \textbackslash textalpha   & \textalpha   & \textbackslash textAlpha   & \textAlpha \\
+beta                   & \textbackslash textbeta    & \textbeta    & \textbackslash textBeta    & \textBeta \\
+gamma                  & \textbackslash textgamma   & \textgamma   & \textbackslash textGamma   & \textGamma \\
+delta                  & \textbackslash textdelta   & \textdelta   & \textbackslash textDelta   & \textDelta \\
+epsilon                & \textbackslash textepsilon & \textepsilon & \textbackslash textEpsilon & \textEpsilon \\
+zeta                   & \textbackslash textzeta    & \textzeta    & \textbackslash textZeta    & \textZeta \\
+eta                    & \textbackslash texteta     & \texteta     & \textbackslash textEta     & \textEta \\
+theta                  & \textbackslash texttheta   & \texttheta   & \textbackslash textTheta   & \textTheta \\
+iota                   & \textbackslash textiota    & \textiota    & \textbackslash textIota    & \textIota \\
+kappa                  & \textbackslash textkappa   & \textkappa   & \textbackslash textKappa   & \textKappa \\
+lambda                 & \textbackslash textlambda  & \textlambda  & \textbackslash textLambda  & \textLambda \\
+mu                     & \textbackslash textmu      & \textmu      & \textbackslash textMu      & \textMu \\
+nu                     & \textbackslash textnu      & \textnu      & \textbackslash textNu      & \textNu \\
+xi                     & \textbackslash textxi      & \textxi      & \textbackslash textXi      & \textXi \\
+omicrdon               & o                          & o            & O                          & O \\
+pi                     & \textbackslash textpi      & \textpi      & \textbackslash textPi      & \textPi \\
+rho                    & \textbackslash textrho     & \textrho     & \textbackslash textRho     & \textRho \\
+sigma                  & \textbackslash textsigma   & \textsigma   & \textbackslash textSigma   & \textSigma \\
+tau                    & \textbackslash texttau     & \texttau     & \textbackslash textTau     & \textTau \\
+upsilon                & \textbackslash textupsilon & \textupsilon & \textbackslash textUpsilon & \textUpsilon \\
+phi                    & \textbackslash textphi     & \textphi     & \textbackslash textPhi     & \textPhi \\
+chi                    & \textbackslash textchi     & \textchi     & \textbackslash textChi     & \textChi \\
+psi                    & \textbackslash textpsi     & \textpsi     & \textbackslash textPsi     & \textPsi \\
+omega                  & \textbackslash textomega   & \textomega   & \textbackslash textOmega   & \textOmega \\
 \bottomrule
 \end{tabular}
 \label{tab:greek_text}
@@ -556,6 +577,13 @@ Here is a single citation with prenote only. There is a definitive book on SPC (
 Here is a single citation with postnote only. $C_\text{pm}$ is a complex subject (\cite[][pages 1-10]{chan1988}).
 
 \newpage
+\section{Glossary terms}\label{sec:glossary_terms}
+
+Here is a request to fill in \gls{dependent_variable} and \glspl{dependent_variable}.
+
+For dual abbreviations and glossary terms, \gls{anome}.
+
+\newpage
 \listoffigures
 
 \newpage
@@ -573,11 +601,11 @@ Here is a single citation with postnote only. $C_\text{pm}$ is a complex subject
 \newpage
 \listofmycorollaries
 
-\newpage
-\listofmylemmas
+% \newpage
+% \listofmylemmas
 
-\newpage
-\listofmypropositions
+% \newpage
+% \listofmypropositions
 
 \newpage
 \section{Acknowledgements}\label{sec:acknowledgements}
@@ -587,6 +615,13 @@ The author wishes to thank ...
 \section{Supporting information}\label{sec:supporting_information}
 
 Add files, data, and other supporting information, and where it can be obtained.
+all
+
+\newpage
+\printunsrtglossary[type={abbreviations}]
+
+\newpage
+\printunsrtglossary[style={indexgroup}]
 
 \newpage
 \section{References}\label{sec:references}
