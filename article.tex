@@ -189,19 +189,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \newpage
 \listoffigures
 
-\newpage
 \listoftables
 
-\newpage
 \listofmyequations
 
-\newpage
 \listofmytheorems
 
-\newpage
 \listofmydefinitions
 
-\newpage
 \listofmycorollaries
 
 \newpage
@@ -215,15 +210,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-\newpage
-\section{Bold, italics, and underline}\label{sec:bold_italics_underline}
+\section{Creating bold, italics, and underline}\label{sec:bold_italics_underline}
 Some of the \textbf{greatest} \textit{discoveries} in \underline{science} were made by \textbf{\textit{accident}}.
 
-\section{URLs}\label{sec:urls}
+\section{Creating URLs}\label{sec:urls}
 Hyperlinks within the document can be easily added. For example, \hyperref[sec:graphics]{see Graphics} and \hyperref[fig:anatomy_of_a_matplotlib_figure]{Anatomy of a matplotlib figure} and \hyperref[def:limit]{Definition of a limit}.
 
 Hyperlinks to external URLs can be easily added. For example, see \href{https://en.wikipedia.org/wiki/Latex}{Wikipedia \LaTeX}.
-\section{Lists}\label{sec:lists}
+
+\newpage
+\section{Creating lists}\label{sec:lists}
 \subsection{Unordered list}\label{sec:unordered_list}
 \begin{itemize}
     \item Illinois
@@ -247,7 +243,7 @@ Hyperlinks to external URLs can be easily added. For example, see \href{https://
 \end{enumerate}
 
 \newpage
-\section{Graphics}\label{sec:graphics}
+\section{Inserting graphics}\label{sec:graphics}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 % H means 'here definitely' to place the figure
@@ -261,7 +257,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \newpage
-\section{Tables}\label{sec:tables}
+\section{Creating tables}\label{sec:tables}
 
 \subsection{Simple table}\label{sec:simple_table}
 
@@ -307,7 +303,7 @@ Visigothorum & 021 & 229 & 678 & 123 & 456 & 678 \\
 \end{table}
 
 \newpage
-\section{Mathematics}\label{sec:mathematics}
+\section{Creating mathematics}\label{sec:mathematics}
 
 \subsection{Inline mathematics}\label{sec:inline_mathematics}
 Examples of inline mathematics $\frac{a}{b}$, followed by text and another inline equation $\lim_{x\to 0}\frac{\sin x}{x}$=1 and more text $\sum_{k=0}^\infty \frac{1}{2^k}=2$ and finally much more text to cover many lines of a paragraph.
@@ -385,7 +381,7 @@ A = \begin{bmatrix}
 \end{flalign}
 
 \newpage
-\section{Greek letters}\label{sec:greek_letters}
+\section{Creating greek letters}\label{sec:greek_letters}
 
 \subsection{Greek Unicode}\label{sec:greek_unicode}
 
@@ -513,7 +509,7 @@ omega                  & \textbackslash textomega   & \textomega   & \textbacksl
 \end{table}
 
 \newpage
-\section{Theorems}\label{sec:theorems}
+\section{Creating theorems}\label{sec:theorems}
 
 \begin{theorem}[Fundamental Theorem of Calculus]
 \label{thm:ftc}
@@ -521,7 +517,7 @@ If $f$ is continuous on the interval $[a,b]$, then \[\frac{d}{dx}\int_a^x f(t)dx
 \end{theorem}
 \mytheorems{Fundamental theorem of calculus}
 
-\section{Definitions}\label{sec:definitions}
+\section{Creating definitions}\label{sec:definitions}
 
 \begin{definition}[Definition of limit]
 \label{def:limit}
@@ -535,14 +531,13 @@ The \textit{derivative} of $f$ is defined to be $\displaystyle f^\prime(x)=\lim_
 \end{definition}
 \mydefinitions{Derivative of f}
 
-\section{Corollaries}\label{sec:corollaries}
+\section{Creating corollaries}\label{sec:corollaries}
 \begin{corollary}
 If $f$ is continuous on the interval $[a,b]$, then \[\int_a^b f(x)dx=F(b)-F(a)\] where $F$ is any antiderivative of $f$.
 \end{corollary}
 \mycorollaries{f is continuous}
 
-\newpage
-\section{Lemmas}\label{sec:lemmas}
+\section{Creating lemmas}\label{sec:lemmas}
 \begin{lemma}
 $x+y=z$
 \end{lemma}
@@ -553,28 +548,7 @@ $z-r+t=3$
 \end{lemma}
 \mylemmas{Lem 2}
 
-\begin{lemma}
-$q=r$
-\end{lemma}
-\mylemmas{Lem 3}
-
-\begin{lemma}
-$x+y=z$
-\end{lemma}
-\mylemmas{Lem 4}
-
-\begin{lemma}
-$z-r+t=3$
-\end{lemma}
-\mylemmas{Lem 5}
-
-\begin{lemma}
-$q=r$
-\end{lemma}
-\mylemmas{Lem 6}
-
-\newpage
-\section{Propositions}\label{sec:propositions}
+\section{Creating propositions}\label{sec:propositions}
 \begin{proposition}
 $x+y=z$
 \end{proposition}
@@ -586,7 +560,7 @@ $\alpha=1-x$
 \mypropositions{Prop 2}
 
 \newpage
-\section{Citations}\label{sec:citations}
+\section{Inserting citations}\label{sec:citations}
 
 Here is a single citation without prenote and postnote. There is a definitive book on MSA (\cite{wheeler2006}).
 
@@ -594,8 +568,7 @@ Here is a single citation with prenote only. There is a definitive book on SPC (
 
 Here is a single citation with postnote only. $C_\text{pm}$ is a complex subject (\cite[][pages 1-10]{chan1988}).
 
-\newpage
-\section{Glossary terms}\label{sec:glossary_terms}
+\section{Inserting glossary terms}\label{sec:glossary_terms}
 
 Here is a request to fill in \gls{dependent_variable} and \glspl{dependent_variable}.
 
