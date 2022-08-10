@@ -4,478 +4,401 @@ short = {AAD},
 long = {average absolute deviation},
 description = {This measure does not square the distance from the average, so it is less affected by extreme observations than are the \gls{variance} and the \gls{standard_deviation}. $\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$}
 }
-
 @dualabbreviationentry{anome,
 short = {ANOME},
 description = {A chart that compares the \gls{average_statistic} of each level to the overall average},
 long = {analysis of main effects}
 }
-
 @dualabbreviationentry{anomr,
 short = {ANOMR},
 description = {A chart that compares the average range of each level to the overall range},
 long = {analysis of mean ranges}
 }
-
 @dualabbreviationentry{cp,
 short = {$C_\text{p}$},
 description = {Compares the width of the process specification to the width of the process variation},
 long = {process capability index two-sided (rational sample)}
 }
-
 @dualabbreviationentry{cpk,
 short = {$C_\text{pk}$},
 description = {Calculates the distance from each specification limit to the \gls{average_statistic}, compares them to the width of the process variation, and reports the smaller value.},
 long = {process capability index one-sided (rational sample)}
 }
-
 @dualabbreviationentry{cpm,
 short = {$C_\text{pm}$},
 description = {Calculates process capability with respect to deviation from the \gls{average_statistic} and deviation from the target},
 long = {process capability index loss function (random sample)}
 }
-
 @dualabbreviationentry{icc,
 short = {ICC},
 description = {Describes how strongly units in the same group resemble each other, with and without operators.},
 long = {intraclass correlation coefficient}
 }
-
 @dualabbreviationentry{iqr,
 short = {IQR},
 description = {This is the value of the 75\textsuperscript{th} percentile minus the value of the 25\textsuperscript{th} percentile. This \gls{dispersion_statistic} attempts to measure the variability of points near the centre.},
 long = {interquartile range}
 }
-
 @dualabbreviationentry{knn,
 short = {k-NN},
 long = {k-nearest neighbour},
 description = {It is a non-parametric supervised learning method used in classification and prediction. The input consists of the k closest training examples in a data set. The output depends on whether k-NN is used for classification or prediction.}
 }
-
 @dualabbreviationentry{mad,
 short = {MAD},
 description = {This is a variation of the \gls{aad} that is even less affected by extremes in the tail because the data in the tails have less influence on the calculation of the median than they do on the \gls{average_statistic}. $\text{MAD} = \text{median}\left(|Y_i - \tilde{Y}|\right)$},
 long = {median absolute deviation}
 }
-
 @dualabbreviationentry{msa,
 short = {MSA},
 description = {Methods to evaluate measurements systems, to understand the causes of measurement variation},
 long = {Measurement System Analysis}
 }
-
 @dualabbreviationentry{pp,
 short = {$P_\text{p}$},
 description = {Compares the width of the process specification to the width of the process variation},
 long = {process capability index two-sided (random sample)}
 }
-
 @dualabbreviationentry{ppk,
 short = {$P_\text{pk}$},
 description = {Calculates the distance from each specification limit to the \gls{average_statistic} and compares then to the width of the process variation},
 long = {process capability index one-sided (random sample)}
 }
-
 @dualabbreviationentry{rmse,
 short = {RMSE},
 long = {root-mean-square error},
 longplural = {root-mean-square errors},
 description = {It is a frequently used measure of the differences between values predicted by a model or an estimator and the values observed.}
 }
-
+@dualabbreviationentry{svm,
+short = {SVM},
+long = {support-vector machine},
+description = {It is a supervised learning model with associated algorithms that analyze data for classification and prediction.}
+}
 @entry{abbreviation,
 name = {abbreviation},
 plural = {abbreviations},
 description = {It is a shortened form of a word.}
 }
-
 @entry{acronym,
 name = {acronym},
 plural = {acronyms},
 description = {It is a pronounceable word composed of a series of initial letters or parts of words.}
 }
-
 @entry{ad_hominem,
 name = {ad hominem},
 description = {Instead of dealing with an idea, one tries to denigrate the messenger.}
 }
-
 @entry{artificialintelligence,
 name = {artificial intelligence},
 description = {Synonym for \gls{deeplearning}.}
 }
-
 @entry{average_chart,
 plural = {average charts},
 name = {average chart ($\overline{X}$)},
 description = {It is a process behaviour chart that plots the \gls{average_statistic} of a subgroup of values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
 }
-
 @entry{average_statistic,
 plural = {averages},
 name = {average},
 description = {It is the sum of a set of values divided by the count of values. $\overline{Y} = \frac{\sum\limits_{i=1}^{n} X_i}{n}$. It is a type of \gls{location_statistic}.}
 }
-
 @entry{average_range_statistic,
 plural = {average ranges},
 name = {average range},
 description = {It is the \gls{average_statistic} of several \glspl{range_statistic} of sample subgroups. A subgroup is sampled, a \gls{range_statistic} is calculated, and the \gls{average_statistic} of the \glspl{range_statistic} is calculated.}
 }
-
 @entry{between_operator_error,
 name = {between-operator error},
 plural = {between-operator errors},
 description = {It is the variation in the \gls{average_statistic} of measurements made by different operators measuring one characteristic on the same parts. It can be caused by differences in training, eduction, skill, and care in taking the measurements.}
 }
-
 @entry{between_part_error,
 name = {between-part error},
 plural = {between-part errors},
 description = {It is the variation of measurements between samples of parts, that is, the part-to-part variation. If a sample is carefully chosen, the error is shown on the \gls{individuals_chart} or the \gls{average_chart}.}
 }
-
 @entry{between_subgroup_error,
 plural = {between-subgroup errors},
 name = {between-subgroup error},
 description = {The subgroup averages are used to find an indirect estimate of the \gls{standard_deviation} of X.}
 }
-
 @entry{bias_linearity,
 name = {bias and linearity},
 description = {This is the difference between the measurement result and its unknown, true values. It can be eliminated by calibration to a standard. Bias is an \gls{average_statistic} over all references values. Linearity or non-linearity is a difference in bias across all reference values.}
 }
-
 @entry{chi_square_distribution,
 plural = {chi-square distributions},
 name = {chi-square distribution},
 description = {It is the distribution of a sum of the squares of k independent standard normal random variables with k degrees of freedom.}
 }
-
 @entry{coder,
 name = {coder},
 plural = {coders},
 description = {A coder translates a problem into a language that the computer understands and creates a solution to that problem.}
 }
-
 @entry{confidence_interval,
 plural = {confidence intervals},
 name = {confidence interval},
 description = {In frequentist statistics, it is a range of estimates for an unknown parameter, interval calculated from values in a sample.}
 }
-
 @entry{control_chart_limit,
 plural = {control chart limits},
 name = {control chart limit},
 description = {This is a limit of predictability for the data plotted on the relevant control chart. It is usually set at three \glspl{standard_deviation} from a measure of \gls{location}.
 }
 }
-
 @entry{deeplearning,
 name = {deep learning},
 description = {It is a type of \gls{neuralnetwork} containing multiple \glspl{hiddenlayer}.}
 }
-
 @entry{deepmodel,
 name = {deep model},
 plural = {deep models},
 description = {It is a type of \gls{neuralnetwork} containing multiple \glspl{hiddenlayer}.}
 }
-
 @entry{deepneuralnetwork,
 name = {deep neural network},
 plural = {deep neural networks`},
 description = {It is a synonym for \gls{deepmodel}.}
 }
-
 @entry{dependentvariable,
 plural = {dependent variables},
 name = {dependent variable},
 description = {The result of varying the values of other variables. In $y = mX + b$, y is the dependent variable.}
 }
-
 @entry{deprecation,
 name = {deprecation},
 plural = {deprecations},
 description = {A document has been superseded. It is recommended to not use the older document. It may not conform to current standard. It may contain errors or incorrect information. It may contain links to documents that no longer exist or their location is unknown. The content may be ambiguous or confusing to users.}
 }
-
 @entry{digital_transformation,
 name = {digital transformation},
 plural = {digital transformations},
 description = {It is a process that aims to improve an entity by triggering significant changes to its properties through combinations of information, computing, communication, and connectivity technologies.}
 }
-
 @entry{dispersion,
 plural = {dispersions},
 name = {dispersion},
 description = {A sample of values will not (usually) have all values identical. Dispersion is the variation between values. Large dispersion means the values are widely scattered. Small dispersion means the values are narrowly scattered.}
 }
-
 @entry{dispersion_statistic,
 plural = {dispersion statistics},
 name = {dispersion statistic},
 description = {It is a statistic that estimates the spread or variability of the data. It is also called a measure of scale. Examples include the variance, the \gls{standard_deviation}, the \gls{range_statistic}, the \gls{aad}, the \gls{mad}, and the \gls{iqr}.}
 }
-
 @entry{distance_to_nearest_specification,
 name = {distance to nearest specification (sigma level)},
 description = {Is the difference between the \gls{location} statistic and the closest specification limit, divided by the \gls{dispersion} statistic (e.g. the \gls{standard_deviation}).}
 }
-
 @entry{distance_to_target,
 name = {distance to target},
 description = {The difference between the specification target and the \gls{average_statistic} is the difference you must adjust to aim the process correctly.}
 }
-
 @entry{dot_plot,
 plural = {dot plots},
 name = {dot plot},
 description = {It is a chart in which dots are used to depict the quantitative values (e.g. counts) associated with categorical variables.}
 }
-
 @entry{feature,
 name = {feature},
 plural = {features},
 description = {It is something we know about, a variable, a predictor, or a column of a spreadsheet. It is used in making a \glspl{prediction}.}
 }
-
 @entry{featureengineering,
 name = {feature engineering},
 description = {It is the process of determining which \glspl{feature} might be useful in training a model, and then converting raw data into said features. It is useful to have domain knowledge.}
 }
-
 @entry{hiddenlayer,
 name = {hidden layer},
 plural = {hidden layers},
 description = {It is a synthetic layer in a \gls{neuralnetwork} between the input layer (the \glspl{feature}) and the output layer (the \gls{prediction}). Hidden layers typically contain an activation function (such as ReLU) for training. A \gls{deepneuralnetwork} contains more than one hidden layer.}
 }
-
 @entry{hypothesis_test,
 plural = {hypothesis tests},
 name = {hypothesis test},
 description = {It is a method for proving that an observed difference was not due to random chance.}
 }
-
 @entry{independentvariable,
 plural = {independent variables},
 name = {independent variable},
 description = {The values that are deliberately or randomly changed. In $y = mX + b$, x is the independent variable.}
 }
-
 @entry{individuals_chart,
 plural = {individuals charts ($\text{X}$)},
 name = {individuals chart ($\text{X}$)},
 description = {It is a process behaviour chart that plots the single values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
 }
-
 @entry{ineffable,
 name = {ineffable},
 description = {It means incapable of being expressed in words.}
 }
-
 @entry{instance,
 name = {instance},
 plural = {instances},
 description = {It is an example, an observation, or a row of a spreasheet.}
 }
-
 @entry{kmeansclustering,
 name = {K-means clustering},
 description = {It is an algorithm that divides n observations into k clusters, in which each observation belongs to the cluster with the nearest mean. This algorithm clusters data by trying to separate observations into k clusters of equal variance, minimizing the within-cluster sum-of-squares.}
 }
-
 @entry{label,
 name = {label},
 plural = {labels},
 description = {It is an answer, a target, a ground truth, or an output.}
 }
-
 @entry{linearregression,
 name = {linear regression},
 plural = {linear regressions},
 description = {It is a linear approach for modelling the relationship between a scalar \gls{dependentvariable} and and \gls{independentvariable}. The case of one \gls{independentvariable} is called simple linear regression. The case of more than one \gls{independentvariable} is called multiple linear regression.}
 }
-
 @entry{location,
 plural = {locations},
 name = {location},
 description = {It is the central value of a sample of values or distribution.}
 }
-
 @entry{location_statistic,
 plural = {location statistics},
 name = {location statistic},
 description = {It is a statistic that estimates the central value that best describes the data. Examples include the \gls{average_statistic}, \gls{median}, and \gls{mode}.}
 }
-
 @entry{machinelearning,
 name = {machine learning},
 description = {It is an approach to making repeated decisions that involves algorithmically finding patterns in data and using these to make models that deal correctly with new data.}
 }
-
 @entry{median,
 plural = {medians},
 name = {median},
 description = {It is the value of the point which has half the data smaller than that point and half the data larger than that point. There are various formulae to calculate the median, for example JMP, Minitab, and SAS estimate it in different ways.}
 }
-
 @entry{mode,
 plural = {modes},
 name = {mode},
 description = {It is the value of the random sample that occurs with the greatest frequency.}
 }
-
 @entry{moving_range_chart,
 name = {moving range chart ($\text{mR}$)},
 plural = {moving range charts ($\text{mR}$)},
 description = {It is a process behaviour chart that plots the difference between successive pairs of values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.},
 plural={moving range charts}
 }
-
 @entry{nelsons_rules,
 name = {Nelson's Rules},
 description = {They are a set of process behaviour chart rules for assessing statistical control.}
 }
-
 @entry{neuralnetwork,
 name = {neural network},
 plural = {neural networks},
 description = {It is a model that, taking inspiration from the brain, is composed of layers (at least one of which is hidden) consisting of simple connected units or neurons followed by nonlinearities.}
 }
-
 @entry{normal_distribution,
 plural = {normal distributions},
 name = {normal distribution},
 description = {A type of continuous probability distribution for a real-valued random variable}
 }
-
 @entry{outlier,
 plural = {outliers},
 name = {outlier},
 description = {It is a data point that differs significantly from other observations. An outlier may be due to variability in the measurement or it may indicate experimental error. An outlier can cause serious problems in statistical analyses.}
 }
-
 @entry{parallelism_chart,
 plural = {parallelism charts},
 name = {parallelism chart},
 description = {It is a process behaviour chart that plots the lines from the average chart and puts them on top of each other. It is used in measurement system analysis. Differences for any part indicate an operator bias relative to other operators.}
 }
-
 @entry{prediction,
 name = {prediction},
 plural = {predictions},
 description = {It is the output of a model.}
 }
-
 @entry{process_capability,
 name = {process capability},
 description = {The ability of a process to meet a performance standard}
 }
-
 @entry{process_capability_index,
 plural = {process capability indices},
 name = {process capability index},
 description = {The ratio of a specification measure and a \gls{dispersion} measure}
 }
-
 @entry{probable_error,
 name = {probable error},
 description = {Also called resolution. It is the interval within which a single measurement might occur 50 \% of the time, $\pm 0.6745 \times \sigma_\text{pure error}$}
 }
-
 @entry{process_behaviour_chart,
 name = {process behaviour chart},
 description = {{It is used to determine if the variation of a sample statistic of a process is stable and predictable, that is, in a state of statistical control. It is also called a Shewhart chart and a control chart.}
 plural={process behaviour charts}}
 }
-
 @entry{range_chart,
 plural = {range charts ($\text{R}$)},
 name = {range chart ($\text{R}$)},
 description = {It is a process behaviour chart that plots the \gls{range_statistic} of a subgroup of values taken in a rational manner. The chart also has an upper \gls{control_chart_limit} line, a lower \gls{control_chart_limit} line, and an \gls{average_statistic} line.}
 }
-
 @entry{range_statistic,
 plural = {ranges},
 name = {range},
 description = {It is the difference between the largest and smallest value in a sample. $X_\text{max} - X_\text{min}$}
 }
-
 @entry{sources_of_variation,
 name = {sources of variation},
 description = {These are the factors in a process that cause variation on the dependent variable. These factors may vary in a deliberate manner (fixed effects), random manner (random effects), or mixed effects (fixed and random factors)}
 }
-
 @entry{specification,
 plural = {specifications},
 name = {specification},
 description = {In the context of measurement system analysis, process capability, and process control, a specification is a lower limit, a target, and an upper limit}
 }
-
 @entry{standard_deviation,
 plural = {standard deviations},
 name = {standard deviation},
 description = {is the square root of the variance. $s = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}}$}
 }
-
 @entry{statistical_control,
 name = {statistical control},
 description = {A process is said to be in a state of statistical control if the variation for both charts is stable and predictable. This means that no points fail various control chart rules, such as Nelson's rules, and no systematic patterns of variation are present. It is also called process stability.}
 }
-
 @entry{taguchi_loss_function,
 name = {Taguchi Loss Function},
 description = {It is a graphical depiction of loss to describe a phenomenon affecting the value of products produced by a company. It was developed by the Japanese business statistician Genichi Taguchi.}
 }
-
 @entry{test_retest_error,
 name = {test-retest error},
 description = {It is the consistency of operators making repeated measurements of the same characteristic on the same part with the same measuring instrument. It is a measure of the common cause variation inherent in the measurement system. It also is used to describe the consistency of a single instrument in making repeated measurements of the same part.}
 }
-
 @entry{type_i_error,
 plural = {Type I errors},
 name = {type I error},
 description = {It is incorrectly rejecting a null hypothesis. It is the probability of saying something is different when in fact it is not. We find a difference that isn’t really there. It is also called alpha risk, producer's risk, and false positive.}
 }
-
 @entry{type_ii_error,
 plural = {Type II errors},
 name = {type II error},
 description = {It is incorrectly failing to reject a null hypothesis. It is the probability of saying something is not different when in fact it is. We fail to find a difference when there is one. It is also called beta risk, consumer’s risk, and false negative. It is used to calculate the power of the test (1-beta), as well as in calculations of sample size.}
 }
-
 @entry{type_iii_error,
 plural = {type III errors},
 name = {type III error},
 description = {It is correctly rejecting the wrong null hypothesis.}
 }
-
 @entry{usecase,
 name = {use case},
 plural = {use cases},
 description = {It is a usage scenario for a piece of software. It suggests where a piece of software may be useful.}
 }
-
 @entry{variance,
 plural = {variances},
 name = {variance},
 description = {It is a measure of \gls{dispersion}, how far a set of numbers is spread out from their \gls{average_statistic}. It is the expectation of the squared deviation of a random variable from its population \gls{average_statistic} or sample \gls{average_statistic}. $s^2 = \frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}$}
 }
-
 @entry{within_operator_error,
 name = {within-operator error},
 description = {It is the variation of measurements made by one operator on all parts}
 }
-
 @entry{within_part_error,
 name = {within-part error},
 plural = {within-part errors},
 description = {It is the variation of measurments within a sample for a single part, over time. Several measurements are taken in different locations on a part and this is repeated at specific time intervals.}
 }
-
 @entry{within_subgroup_error,
 name = {within-subgroup error},
 description = {It is the variation within a sample of parts. If the sample is carefully chosen, this variation is the background error of a process. It is shown on the \gls{moving_range_chart} or the \gls{range_chart}. The \gls{average_range_statistic} is calculated to estimate the overall error.}
