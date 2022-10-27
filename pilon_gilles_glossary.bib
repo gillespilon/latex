@@ -44,11 +44,6 @@ short = {$C_\text{pm}$},
 description = {It calculates process capability with respect to deviation from the \gls{averagestatistic} and deviation from the target.},
 long = {process capability index loss function (random sample)}
 }
-@entry{endog,
-name = {endogenous variable},
-plural = {endogenous variables},
-description = {Endogenous variables are explained or predicted by a model. They are caused by factors within the system. Other names are y, dependent variable, regressand, outcome, and response variable. In $y = mX + b$, y is the endogenous variable.}
-}
 @dualabbreviationentry{etl,
 short = {ETL},
 long = {extract, transform, and load},
@@ -126,7 +121,7 @@ description = {Instead of dealing with an idea, one tries to denigrate the messe
 }
 @entry{additive,
     name = {additive},
-    description = {An additive model of \glspl{independentvariable} imp;lies that the observed effects are due to main effects only and no interactions (\cite[][218]{boxhunterhunter1978}).}
+    description = {An additive model of \glspl{exog} imp;lies that the observed effects are due to main effects only and no interactions (\cite[][218]{boxhunterhunter1978}).}
 }
 @entry{argument,
 name = {argument},
@@ -314,6 +309,16 @@ name = {effect},
 plural = {effects},
 description = {It is the change in response caused by a change in the level of a factor (\cite[][114]{hicks1982}).}
 }
+@entry{endog,
+name = {endogenous variable},
+plural = {endogenous variables},
+description = {Endogenous variables are explained or predicted by a model. They are caused by factors within the system. Other names are y, dependent variable, regressand, outcome, and response variable. In $y = mX + b$, y is the endogenous variable.}
+}
+@entry{exog,
+name = {exogenous variable},
+plural = {exogenous variables},
+description = {Exogenous variables are terms in a model. They are caused by factors outside the system. In $y = mX + b$, x is the exogenous variable. In a \gls{designedexperiment}, it is a factor that you can control, want to control, or is controlled at low cost.}
+}
 @entry{expectedmeansquares,
 name = {expected mean squares},
 description = {They are the expected values of certain statistics arising in partitions of sums of squares in the analysis of variance. They can be used for ascertaining which statistic should appear in the denominator in an F test for testing a null hypothesis that a particular effect is absent.}
@@ -370,11 +375,6 @@ description = {It is a method for proving that an observed difference was not du
 name = {ImageNet},
 description = {The ImageNet project is a large visual database designed for use in visual object recognition software research. More than 14 million images have been hand-annotated by the project to indicate what objects are pictured and in at least one million of the images, bounding boxes are also provided. ImageNet contains more than 20,000 categories, with a typical category, such as ``balloon'' or ``strawberry'', consisting of several hundred images. The database of annotations of third-party image URLs is freely available directly from ImageNet, though the actual images are not owned by ImageNet. Since 2010, the ImageNet project runs an annual software contest, the ImageNet Large Scale Visual Recognition Challenge (ILSVRC), where software programs compete to correctly classify and detect objects and scenes. The challenge uses a ``trimmed'' list of one thousand non-overlapping classes.}
 }
-@entry{independentvariable,
-plural = {independent variables},
-name = {independent variable},
-description = {It is the values that are deliberately or randomly changed. In $y = mX + b$, x is the independent variable. In a \gls{designedexperiment}, it is a factor that you can control, want to control, or is controlled at low cost.}
-}
 @entry{individualschart,
 plural = {individuals charts ($\text{X}$)},
 name = {individuals chart ($\text{X}$)},
@@ -415,7 +415,7 @@ description = {It is an answer, a target, a ground truth, or an output.}
 @entry{linearregression,
 name = {linear regression},
 plural = {linear regressions},
-description = {It is a linear approach for modelling the relationship between a scalar \gls{endog} and and \gls{independentvariable}. The case of one \gls{independentvariable} is called simple linear regression. The case of more than one \gls{independentvariable} is called multiple linear regression.}
+description = {It is a linear approach for modelling the relationship between a scalar \gls{endog} and and \gls{exog}. The case of one \gls{exog} is called simple linear regression. The case of more than one \gls{exog} is called multiple linear regression.}
 }
 @entry{location,
 plural = {locations},
