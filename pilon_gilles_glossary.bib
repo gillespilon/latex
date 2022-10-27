@@ -317,7 +317,7 @@ description = {Endogenous variables are explained or predicted by a model. They 
 @entry{exog,
 name = {exogenous variable},
 plural = {exogenous variables},
-description = {Exogenous variables are terms in a model. They are caused by factors outside the system. Other names are x, independent variable, regressor, design, and explanatory variable. In $y = mX + b$, x is the exogenous variable. In a \gls{designedexperiment}, it is a factor that you can control, want to control, or is controlled at low cost.}
+description = {Exogenous variables are terms in a model. They are caused by factors outside the system. Other names are x, independent variable, regressor, design, explanatory variable, and feature (machine learning). In $y = mX + b$, x is the exogenous variable. In a \gls{designedexperiment}, it is a factor that you can control, want to control, or is controlled at low cost.}
 }
 @entry{expectedmeansquares,
 name = {expected mean squares},
@@ -338,14 +338,9 @@ name = {factorial experiment},
 plural = {factorial experiments},
 description = {It is a designed experiment that measures all possible combinations of factors.}
 }
-@entry{feature,
-name = {feature},
-plural = {features},
-description = {It is something we know about, a variable, a predictor, or a column of a spreadsheet. It is used in making a \gls{prediction}.}
-}
 @entry{featureengineering,
 name = {feature engineering},
-description = {It is the process of determining which \glspl{feature} might be useful in training a model, and then converting raw data into said features. It is useful to have domain knowledge.}
+description = {It is the process of determining which \glspl{exog} might be useful in training a model, and then converting raw data into said \gls{exog}. It is useful to have domain knowledge.}
 }
 @entry{fixedeffectsmodel,
 name = {fixed effects model},
@@ -360,7 +355,7 @@ description = {It is a subset of a \gls{factorialexperiment}.}
 @entry{hiddenlayer,
 name = {hidden layer},
 plural = {hidden layers},
-description = {It is a synthetic layer in a \gls{neuralnetwork} between the input layer (the \glspl{feature}) and the output layer (the \gls{prediction}). Hidden layers typically contain an activation function (such as ReLU) for training. A \gls{deepneuralnetwork} contains more than one hidden layer.}
+description = {It is a synthetic layer in a \gls{neuralnetwork} between the input layer (the \glspl{exog}) and the output layer (the \gls{prediction}). Hidden layers typically contain an activation function (such as ReLU) for training. A \gls{deepneuralnetwork} contains more than one hidden layer.}
 }
 @entry{hubris,
 name = {hubris},
