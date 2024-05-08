@@ -100,6 +100,16 @@ long = {root-mean-squared error},
 longplural = {root-mean-squared errors},
 description = {It is a frequently-used measure of the differences between values predicted by a model or an estimator and the values observed. $$\text{RMSE} = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(y_i - \widehat{y}\right)^2}{n}}$$}
 }
+@dualabbreviationentry{rpa,
+short = {RPA},
+long = {Robotic Process Automation},
+description = {It uses software robots to handle repetitive computer tasks.}
+}
+@dualabbreviationentry{sap,
+short = {SAP},
+long = {Systems, Applications, and Products},
+description = {It is a suite of software solutions developed by the German company SAP SE. SAP software is primarily focused on Enterprise Resource Planning (ERP), which means it helps businesses manage and integrate various core functions.}
+}
 @dualabbreviationentry{svm,
 short = {SVM},
 long = {support-vector machine},
@@ -156,6 +166,11 @@ description = {It is the sum of a set of values divided by the count of values. 
 plural = {average ranges},
 name = {average range},
 description = {It is the \gls{averagestatistic} of several \glspl{rangestatistic} of sample subgroups. A subgroup is sampled, a \gls{rangestatistic} is calculated, and the \gls{averagestatistic} of the \glspl{rangestatistic} is calculated.}
+}
+@entry{beautifulsoup,
+name = {Beautiful Soup},
+description = {It parses HTML and XML documents to create a tree-like representation
+of the document structure and extract data. (\cite{beautifulsoup})}
 }
 @entry{betweenoperatorerror,
 name = {between-operator error},
@@ -237,6 +252,10 @@ description = {The data science architect designs the collection, storage, and a
 name = {data scientist},
 plural = {data scientists},
 description = {A data scientist applies the methodologies and tools of \gls{datascience}. This individual has expertise as a \gls{dataanalyst}, \gls{machinelearningengineer}, and \gls{statistician}.}
+}
+@entry{datasense,
+name = {datasense},
+description = {It is a Python package for statistical, graphical, and predictive analysis. To use datasense, install a Python distribution appropriate to your operating system. Then install datasense following the instructions  at \href{https://github.com/gillespilon/datasense}{datasense}.}
 }
 @entry{decisionmaker,
 name = {decision maker},
@@ -352,6 +371,18 @@ name = {fractional factorial experiment},
 plural = {fractional factorial experiments},
 description = {It is a subset of a \gls{factorialexperiment}.}
 }
+@entry{github,
+name = {GitHub},
+description = {It is a cloud-based platform where you can store, share, and work together with others to write code.}
+}
+@entry{gitlab,
+name = {GitLab},
+description = {It is a cloud-based platform where you can store, share, and work together with others to write code.}
+}
+@entry{heptapodfoss,
+name = {Heptapod FOSS},
+description = {It is a web-based platform designed to bring Mercurial support to \Gls{gitlab}.}
+}
 @entry{hiddenlayer,
 name = {hidden layer},
 plural = {hidden layers},
@@ -460,7 +491,6 @@ description = {It is the value of the random sample that occurs with the greates
 name = {moving range chart ($\text{mR}$)},
 plural = {moving range charts ($\text{mR}$)},
 description = {It is a process behaviour chart that plots the difference between successive pairs of values taken in a rational manner. The chart also has an upper \gls{controlchartlimit} line, a lower \gls{controlchartlimit} line, and an \gls{averagestatistic} line.},
-plural={moving range charts}
 }
 @entry{naivebayesclassifier,
 name = {naive Bayes classifier},
@@ -481,6 +511,10 @@ plural = {normal distributions},
 name = {normal distribution},
 description = {It is a type of continuous probability distribution for a real-valued random variable}
 }
+@entry{openpyxl,
+name = {openpyxl},
+description = {It is a \Gls{python} library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files. (\cite{openpyxl})}
+}
 @entry{opensourcesoftware,
 name = {open-source software},
 description = {It is computer software that is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software and its source code to anyone and for any purpose. Open-source software may be developed in a collaborative public manner. Open-source software is a prominent example of open collaboration, meaning any capable user is able to participate online in development, making the number of possible contributors indefinite. The ability to examine the code facilitates public trust in the software.}
@@ -493,6 +527,10 @@ description = {It is a data point that differs significantly from other observat
 @entry{overfitting,
 name = {overfitting},
 description = {It is the production of an analysis that corresponds too closely or exactly to a particular set of data, and may therefore fail to fit to additional data or predict future observations reliably. An overfitted model is a mathematical model that contains more parameters than can be justified by the data.[2] The essence of overfitting is to have unknowingly extracted some of the residual variation (that is, the noise) as if that variation represented underlying model structure. The possibility of over-fitting exists because the criterion used for selecting the model is not the same as the criterion used to judge the suitability of a model. For example, a model might be selected by maximizing its performance on some set of training data, and yet its suitability might be determined by its ability to perform well on unseen data; then over-fitting occurs when a model begins to "memorize" training data rather than "learning" to generalize from a trend. As an extreme example, if the number of parameters is the same as or greater than the number of observations, then a model can perfectly predict the training data simply by memorizing the data in its entirety. Such a model, though, will typically fail severely when making predictions.}
+}
+@entry{pandas,
+name = {pandas},
+description = {It is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the \Gls{python} programming language. (\cite{pandas})}
 }
 @entry{parameter,
 name = {parameter},
@@ -533,6 +571,18 @@ name = {process capability index},
 plural = {process capability indices},
 description = {It is the ratio of a specification measure and a \gls{dispersion} measure.}
 }
+@entry{pyautogui,
+name = {PyAutoGUI},
+description = {It lets your \Gls{python} scripts control the mouse and keyboard to automate interactions with other applications. The API is designed to be simple. It works on Windows, macOS, and Linux, and runs on \Gls{python} 2 and 3.” (\cite{pyautogui})}
+}
+@entry{pytesseract,
+name = {Python Tesseract},
+description = {Python Tesseract is a wrapper for \Gls{tesseract}. It is also useful as a stand-alone invocation script to tesseract, as it can read all image types supported by the Pillow and Leptonica imaging libraries, including jpeg, png, gif, bmp, tiff, and others. Additionally, if used as a script, Python Tesseract will print the recognized text instead of writing it to a file. (\cite{pytesseract})}
+}
+@entry{python,
+name = {Python},
+description = {Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms. (\cite{python})}
+}
 @entry{randomeffectsmodel,
 name = {random effects model},
 plural = {random effects models},
@@ -562,6 +612,10 @@ description = {It is the difference between the largest and smallest value in a 
 name = {reinforcement learning},
 description = {It is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward.}
 }
+@entry{requests,
+name = {Requests},
+description = {It  is a simple, yet elegant, HTTP library. Requests allows you to send HTTP/1.1 requests extremely easily. (\cite{requests})}
+}
 @entry{residualerror,
 name = {residual error},
 plural = {residual errors},
@@ -586,9 +640,20 @@ description = {It is a plot of the response versus the levels for a factor.}
 name = {scikit-learn},
 description = {It is an \gls{opensourcesoftware}, package for \gls{machinelearning} that supports supervised and unsupervised learning. It also provides various tools for model fitting, data preprocessing, model selection, model evaluation, and many other utilities.}
 }
+@entry{scrapy,
+name = {Scrapy},
+description = {Scrapy is a fast high-level web crawling and \gls{webscraping} framework, used to crawl websites
+and extract structured data from their pages. It can be used for a wide range of purposes,
+from data mining to monitoring and automated testing. (\cite{scrapy}}
+}
 @entry{semisupervisedlearning,
 name = {semi-supervised learning},
 description = {It is an approach to machine learning that combines a small amount of labeled data with a large amount of unlabeled data during training. Semi-supervised learning falls between unsupervised learning (with no labeled training data) and supervised learning (with only labeled training data). It is a special instance of weak supervision.}
+}
+@entry{shellscript,
+name = {shell script},
+plural = {shell scripts},
+description = {A shell script is a plain text file of commands that is executed on a compute terminal, also known as a shell. Linux (\cite{bash}, \cite{zsh}), Mac (\cite{zsh}), and Windows PowerShell (\cite{windowspowershell}) can easily execute shell scripts. Windows PowerShell offers similar functionality and has its own syntax for the commands.}
 }
 @entry{sourcesofvariation,
 name = {sources of variation},
@@ -635,6 +700,10 @@ description = {It is a formula or assertion that is true in every possible inter
 name = {TensorFlow},
 description = {It is an \gls{opensourcesoftware} package for \gls{machinelearning} and \gls{artificialintelligence}. It can be used across a range of tasks but has a particular focus on training and inference of \glspl{deepneuralnetwork}.}
 }
+@entry{tesseract,
+name = {Tesseract},
+description = {It is an optical character recognition engine (libtesseract) and a command line program (tesseract). (\cite{tesseract})}
+}
 @entry{testretesterror,
 name = {test-retest error},
 description = {It is the consistency of operators making repeated measurements of the same characteristic on the same part with the same measuring instrument. It is a measure of the common cause variation inherent in the measurement system. It also is used to describe the consistency of a single instrument in making repeated measurements of the same part.}
@@ -667,6 +736,10 @@ description = {It occurs when a mathematical model cannot adequately capture the
 name = {unsupervised learning},
 description = {It is a type of algorithm that learns patterns from untagged data. The hope is that through mimicry, which is an important mode of learning in people, the machine is forced to build a compact internal representation of its world and then generate imaginative content from it.}
 }
+@entry{urllib,
+name = {urllib},
+description = {It is a package that collects several modules for working with URLs. (\cite{urllib})}
+}
 @entry{usecase,
 name = {use case},
 plural = {use cases},
@@ -676,6 +749,22 @@ description = {It is a usage scenario for a piece of software. It suggests where
 plural = {variances},
 name = {variance},
 description = {It is a measure of \gls{dispersion}, how far a set of numbers is spread out from their \gls{averagestatistic}. It is the expectation of the squared deviation of a random variable from its population \gls{averagestatistic} or sample \gls{averagestatistic}. $$s^2 = \frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}$$}
+}
+@entry{webscraping,
+name = {web scraping},
+description = {It is the practice of gathering data through any means other than a program interacting with an API (or, obviously, through a human using a web browser). This is most commonly accomplished by writing an automated program that queries a web server, requests data (usually in the form of HTML and other files that compose web pages), and then parses that data to extract needed information. (\cite{mitchell_ryan_web_scraping_with_python})}
+}
+@entry{windowspowerbi,
+name = {Power BI},
+description = {It is a collection of software services, apps, and connectors designed to transform data into clear and actionable insights. It falls under the umbrella of Business Intelligence (BI) tools, which help businesses analyze data to make informed decisions. (\cite{windowspowerbi})}
+}
+@entry{windowspowershell,
+name = {Windows PowerShell},
+description = {It is a powerful task automation and configuration management framework designed specifically for the Windows operating system. It combines the features of a command-line shell with a scripting language, offering a versatile environment for system administrators and power users. (\cite{windowspowershell})}
+}
+@entry{windowstaskscheduler,
+name = {Windows Task Scheduler},
+description = {is a built-in utility that allows you to automate the execution of programs, scripts, or various tasks at specific times or intervals on a Windows computer. (\cite{windowstaskscheduler})}
 }
 @entry{withinoperatorerror,
 name = {within-operator error},
