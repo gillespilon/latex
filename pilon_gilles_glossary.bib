@@ -29,11 +29,6 @@ short = {$C_\text{p}$},
 description = {It compares the width of the process specification to the width of the process variation.},
 long = {process capability index two-sided (rational sample)}
 }
-@entry{api,
-name = {application programming interface},
-plural = {application programming interfaces},
-description = {It is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software.}
-}
 @dualabbreviationentry{cpk,
 short = {$C_\text{pk}$},
 description = {It calculates the distance from each specification limit to the \gls{averagestatistic}, compares them to the width of the process variation, and reports the smaller value.},
@@ -48,6 +43,12 @@ long = {process capability index loss function (random sample)}
 short = {ETL},
 long = {extract, transform, and load},
 description = {At a high level it is extract, transform, and load data. The specific tasks include: building data pipelines to gather information from difference source systems; integrate, consolidate, and clean data; structure the data for use in individual analytics applications.}
+}
+@dualabbreviationentry{gui,
+short = {GUI},
+long = {graphical user interface},
+longplural = {graphical user interfaces},
+description = {It is a visual interface that allows users to interact with a computer or other electronic device using icons, buttons, and menus. GUIs are interactive and replace text-based commands with user-friendly actions. The goal of a GUI is to make decision points easy for users to find, understand, and use.}
 }
 @dualabbreviationentry{icc,
 short = {ICC},
@@ -103,7 +104,7 @@ description = {It is a frequently-used measure of the differences between values
 @dualabbreviationentry{rpa,
 short = {RPA},
 long = {Robotic Process Automation},
-description = {It uses software robots to handle repetitive computer tasks.}
+description = {It uses software robots to handle repetitive computer tasks. The benefits include reduced execution time, customization for specific needs, perform complex workflows, and consistent repeatability to eliminate human errors.}
 }
 @dualabbreviationentry{sap,
 short = {SAP},
@@ -132,6 +133,11 @@ description = {Instead of dealing with an idea, one tries to denigrate the messe
 @entry{additive,
     name = {additive},
     description = {An additive model of \glspl{exog} imp;lies that the observed effects are due to main effects only and no interactions (\cite[][218]{boxhunterhunter1978}).}
+}
+@entry{api,
+name = {application programming interface},
+plural = {application programming interfaces},
+description = {It is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software.}
 }
 @entry{argument,
 name = {argument},
@@ -264,7 +270,7 @@ description = {It is someone who understands the art and science of data-driven 
 }
 @entry{deeplearning,
 name = {deep learning},
-description = {It is a type of \gls{neuralnetwork} containing multiple \glspl{hiddenlayer}.}
+description = {It is a type of \gls{artificialneuralnetwork} containing multiple \glspl{hiddenlayer}.}
 }
 @entry{deepmodel,
 name = {deep model},
@@ -386,7 +392,7 @@ description = {It is a web-based platform designed to bring Mercurial support to
 @entry{hiddenlayer,
 name = {hidden layer},
 plural = {hidden layers},
-description = {It is a synthetic layer in a \gls{neuralnetwork} between the input layer (the \glspl{exog}) and the output layer (the \gls{prediction}). Hidden layers typically contain an activation function (such as ReLU) for training. A \gls{deepneuralnetwork} contains more than one hidden layer.}
+description = {It is a synthetic layer in a \gls{artificialneuralnetwork} between the input layer (the \glspl{exog}) and the output layer (the \gls{prediction}). Hidden layers typically contain an activation function (such as ReLU) for training. A \gls{deepneuralnetwork} contains more than one hidden layer.}
 }
 @entry{hubris,
 name = {hubris},
@@ -422,7 +428,7 @@ description = {It is a dependent relation between two factors. In a \gls{designe
 }
 @entry{keras,
 name = {Keras},
-description = {It is a \gls{opensourcesoftware}, high-level, \gls{deeplearning}, \gls{api} that makes it very simple to train and run \glspl{neuralnetwork}. It can run on top of \gls{tensorflow} and other packages.}
+description = {It is a \gls{opensourcesoftware} for \gls{deeplearning} with a high-level \gls{api} that makes it very simple to train and run \glspl{artificialneuralnetwork}. It can run on top of \gls{tensorflow} and other packages.}
 }
 @entry{kfoldcrossvalidation,
 name = {K-fold cross-validation},
@@ -501,9 +507,9 @@ description = {It is a family of simple probabilistic classifiers based on apply
 name = {Nelson's Rules},
 description = {They are a set of \gls{processbehaviourchart} rules for assessing statistical control.}
 }
-@entry{neuralnetwork,
-name = {neural network},
-plural = {neural networks},
+@entry{artificialneuralnetwork,
+name = {artificial neural network},
+plural = {artificials neural networks},
 description = {It is a network of artificial neurons or nodes.}
 }
 @entry{normaldistribution,
@@ -573,7 +579,7 @@ description = {It is the ratio of a specification measure and a \gls{dispersion}
 }
 @entry{pyautogui,
 name = {PyAutoGUI},
-description = {It lets your \Gls{python} scripts control the mouse and keyboard to automate interactions with other applications. The API is designed to be simple. It works on Windows, macOS, and Linux, and runs on \Gls{python} 2 and 3.” (\cite{pyautogui})}
+description = {It lets your \Glspl{pythonscript} control the mouse and keyboard to automate interactions with other applications. The API is designed to be simple. It works on Windows, macOS, and Linux, and runs on \Gls{python} 2 and 3.” (\cite{pyautogui})}
 }
 @entry{pytesseract,
 name = {Python Tesseract},
@@ -582,6 +588,11 @@ description = {Python Tesseract is a wrapper for \Gls{tesseract}. It is also use
 @entry{python,
 name = {Python},
 description = {Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms. (\cite{python})}
+}
+@entry{pythonscript,
+name = {Python script},
+plural = {Python scripts},
+description = {A \Gls{python} script is a plain text file of \Gls{python} commands that is executed on a compute terminal, also known as a shell.  A \Gls{python} script is typically saved in a plain text file with a .py extension. To run a \Gls{python} script, you need a \Gls{python} interpreter installed on your computer. The interpreter reads the code in the script line by line, translates it into machine code the computer understands, and executes the instructions.}
 }
 @entry{randomeffectsmodel,
 name = {random effects model},
@@ -778,4 +789,9 @@ description = {It is the variation of measurments within a sample for a single p
 @entry{withinsubgrouperror,
 name = {within-subgroup error},
 description = {It is the variation within a sample of parts. If the sample is carefully chosen, this variation is the background error of a process. It is shown on the \gls{movingrangechart} or the \gls{rangechart}. The \gls{averagerangestatistic} is calculated to estimate the overall error.}
+}
+@entry{softwarerobot,
+name = {software robot},
+plural = {software robots},
+description = {It is a software program that automates repetitive, rule-based tasks on a computer.}
 }
