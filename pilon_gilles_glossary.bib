@@ -233,11 +233,30 @@ name = {confusion matrix},
 plural = {cunfusion matrices},
 description = {In the field of machine learning, it s a table that shows the performance of an algorithm, typically a supervised learning model. Each row of the matrix represents the instances in an actual class while each column represents the instances in a predicted class.}
 }
+@entry{shewhartcontrolchart,
+name = {Shewhart control chart},
+plural={Shewhart control charts},
+seealso={controlchart}
+}
+@entry{controlchart,
+plural = {control charts},
+name = {control chart},
+description = {It is a graphical plot used to determine if process variation is stable and predictable. A process that is in \gls{statisticalcontrol} means that the variation is due to \glspl{commoncause}. A process that is not in \gls{statisticalcontrol}, that is, out of control, means that the variation is due to \glspl{specialcause}},
+}
 @entry{controlchartlimit,
 plural = {control chart limits},
 name = {control chart limit},
-description = {This is a limit of predictability for the data plotted on the relevant control chart. It is usually set at three \glspl{standarddeviation} from a measure of \gls{location}.
+description = {This is a limit of predictability for the data plotted on the relevant control chart. It is usually set at three \glspl{standarddeviation} from a measure of \gls{location}.}
 }
+@entry{commoncause,
+plural = {common causes},
+name = {common cause},
+description = {TBD},
+}
+@entry{specialcause,
+plural = {special causes},
+name = {special cause},
+description = {TBD}
 }
 @entry{dataanalyst,
 name = {data analyst},
@@ -581,7 +600,7 @@ description = {It is also called resolution. It is the interval within which a s
 @entry{processbehaviourchart,
 name = {process behaviour chart},
 plural={process behaviour charts},
-description = {It is used to determine if the variation of a sample statistic of a process is stable and predictable, that is, in a state of statistical control. It is also called a Shewhart chart and a control chart.}
+seealso={controlchart}
 }
 @entry{processcapability,
 name = {process capability},
@@ -604,6 +623,36 @@ description = {Python Tesseract is a wrapper for \Gls{tesseract}. It is also use
 @entry{python,
 name = {Python},
 description = {Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms. (\cite{python})}
+}
+@entry{pythonclass,
+name = {Python class},
+plural = {Python classes},
+description = {A Python class is a blueprint for creating objects. It defines the properties and methods (structure) that will be shared by all instances of that class.}
+}
+@entry{pythonmethod,
+name = {Python method},
+plural = {Python methods},
+description = {A Python method is a \gls{pythonfunction} defined with a \gls{pythonclass}. It operates on the data (\gls{pythonattribute}) associated with an objects of the class.}
+}
+@entry{pythonattribute,
+name = {Python attribute},
+plural = {Python attributes},
+description = {A Python attribute is a variable associated with an object. It represents the data or state of an object.}
+}
+@entry{pythonfunction,
+name = {Python function},
+plural = {Python functions},
+description = {A Python function is a reusable block of code that performs a specific task. It takes input, processes it, and returns an output.}
+}
+@entry{pythondistribution,
+name = {Python distribution},
+plural = {Python distributions},
+description = {A Python distribution is a software bundle containing a Python interpreter and the Python standard library. It can be installed from the \href{https://www.python.org/downloads/}{Python.org distribution page} or using the package manager of various operating systems.}
+}
+@entry{distributionpackage,
+name = {distribution package},
+plural = {distribution packages},
+description = {A distribution package is a version controlled archive file that contains Python packages, modules, and other resources files that are used to distribute a release. The archive file is what an end-user will download from the internet and install. A distribution package is a piece of software that you can install. Most of the time, this is synonymous with “project”. When you type pip install pkg, or when you write dependencies = ["pkg"] in your pyproject.toml, pkg is the name of a distribution package. When you search or browse the PyPI, the most widely known centralized source for installing Python libraries and tools, what you see is a list of distribution packages.}
 }
 @entry{pythonscript,
 name = {Python script},
