@@ -1,13 +1,13 @@
 % Encoding: UTF-8
-@dualabbreviationentry{1d,
+@dualabbreviationentry{onedimarray,
 short = {1d},
 long = {1d array},
-description = {One-dimensional array. A NumPy array whose `.shape` has length 1. A vector.}
+description = {One-dimensional array. A NumPy array whose \textit{.shape} has length 1. A vector.}
 }
-@dualabbreviationentry{2d,
+@dualabbreviationentry{twodimarray,
 short = {2d},
 long = {2d array},
-description = {Two-dimensional array. A NumPy array whose .shape has length 2. Often represents a matrix.}
+description = {Two-dimensional array. A NumPy array whose \textit{.shape} has length 2. Often represents a matrix.}
 }
 @dualabbreviationentry{aad,
 short = {AAD},
@@ -116,6 +116,26 @@ short = {SVM},
 long = {support-vector machine},
 description = {It is a supervised learning model with associated algorithms that analyze data for classification and prediction.}
 }
+@dualabbreviationentry{iam,
+short = {IAM},
+long = {identity and access management},
+description = {It is a framework of policies and technologies to ensure that the right users have the appropriate access to technology resources. It identifies, authenticates, and controls access for individuals who will be using information technology resources, hardware, and access to applications.},
+}
+@dualabbreviationentry{pam,
+short = {PAM},
+long = {privileged access management},
+description = {It is a type of \gls{iam} and \gls{cybersecurity} technology that focuses on the control, monitoring, and protection of privileged accounts in an organization. Accounts with privileged access grant users enhanced permissions, making them prime targets for attackers due to their extensive access to vital systems and sensitive data.}
+}
+@dualabbreviationentry{edr,
+short = {EDR},
+long = {endpoint detection and response},
+description = {It is \gls{cybersecurity} technology that continually monitors an endpoint (mobile phone, laptop, internet of things devices) to mitigate malicious cyber threats},
+}
+@dualabbreviationentry{xdr,
+short = {XDR},
+long = {extended detection and response},
+description = {It provides security incident detection and automated response capabilities for security infrastructure. It integrates threat intelligence and telemetry data from multiple sources with security analytics to provide conceptualization and correlation of security alerts.}
+}
 @entry{abbreviation,
 name = {abbreviation},
 plural = {abbreviations},
@@ -156,15 +176,15 @@ description = {Keyword arguments (named arguments) are values that, when passed 
 }
 @entry{artificialintelligence,
 name = {artificial intelligence},
-description = {XXX.}
+description = {TBD}
 }
 @entry{artificialnarrowintelligence,
 name = {artificial narrow intelligence},
-description = {XXX.}
+description = {TBD}
 }
 @entry{generativeartificialintelligence,
 name = {generative artificial intelligence},
-description = {XXX.}
+description = {TBD}
 }
 @entry{averagechart,
 plural = {average charts},
@@ -194,7 +214,7 @@ description = {It is the variation in the \gls{averagestatistic} of measurements
 @entry{betweenparterror,
 name = {between-part error},
 plural = {between-part errors},
-description = {It is the variation of measurements between samples of parts, that is, the part-to-part variation. If a sample is carefully chosen, the error is shown on the \gls{individuals_chart} or the \gls{averagechart}.}
+description = {It is the variation of measurements between samples of parts, that is, the part-to-part variation. If a sample is carefully chosen, the error is shown on the \gls{individualschart} or the \gls{averagechart}.}
 }
 @entry{betweensubgrouperror,
 plural = {between-subgroup errors},
@@ -251,12 +271,12 @@ description = {This is a limit of predictability for the data plotted on the rel
 @entry{commoncause,
 plural = {common causes},
 name = {common cause},
-description = {TBD},
+description = {Variation due to common cause is expected and natural variation.},
 }
 @entry{specialcause,
 plural = {special causes},
 name = {special cause},
-description = {TBD}
+description = {Variation due to special cause is unexpected and unusual variation. The cause can be identified.}
 }
 @entry{dataanalyst,
 name = {data analyst},
@@ -297,7 +317,7 @@ description = {It is someone who understands the art and science of data-driven 
 }
 @entry{deeplearning,
 name = {deep learning},
-description = {It is a type of \gls{machinelearning} using an \gls{artificialneuralnetwork} containing multiple \glspl{hiddenlayers}.}
+description = {It is a type of \gls{machinelearning} using an \gls{artificialneuralnetwork} containing multiple \glspl{hiddenlayer}.}
 }
 @entry{deepmodel,
 name = {deep model},
@@ -459,7 +479,7 @@ description = {It is a Python library for accelerator-oriented array computation
 }
 @entry{keras,
 name = {Keras},
-description = {It is  \gls{opensourcesoftware} for \gls{deeplearning} with an \gls{api} that makes it very simple to train and run \glspl{artificialneuralnetworks}. It can run on top of \gls{tensorflow} and other \gls{softwareframeworks} (\gls{JAX}, PyTorch).}
+description = {It is  \gls{opensourcesoftware} for \gls{deeplearning} with an \gls{api} that makes it very simple to train and run \glspl{artificialneuralnetwork}. It can run on top of \gls{tensorflow} and other \glspl{softwareframework} (\gls{jax}, PyTorch).}
 }
 @entry{seborrheickeratosis,
 name = {seborrheic keratosis},
@@ -864,4 +884,13 @@ description = {It is a software program that automates repetitive, rule-based ta
 name = {software framework},
 plural = {software frameworks},
 description = {It is a collection of code for building applications. It saves time and effort by providing reusable components and functionalities. It typically consits of classes and functions, interfaces and protocols, and configuration options. }
+}
+@entry{pythonnamespace,
+name = {Python namespace},
+plural = {Python namespaces},
+description = {It is the place where a variable is stored. Namespaces are implemented as dictionaries. There are local, global, and built-in namespaces as well as nested namespaces in objects (in methods). Namespaces support modularity by preventing naming conflicts. For instance, the functions builtins.open and os.open() are distinguished by their namespaces. Namespaces also aid readability and maintainability by making it clear which module implements a function. For instance, writing random.seed() or itertools.islice() makes it clear that those functions are implemented by the random and itertools modules, respectively.}
+}
+@entry{cybersecurity,
+name = {cybersecurity},
+description = {It is the protection of computer systems and networks from threats that may result in unauthorized information disclosure, theft of or damaage to hardware, software, and data, and disruption or misdirection of the services they provide.}
 }
