@@ -83,12 +83,13 @@
 \addbibresource{~/documents/repositories/latex/pilon_gilles_bibliography.bib}
 
 % useful for the glossary
-\usepackage[toc, acronym, nopostdot, numberedsection, record=hybrid, shortcuts=ac, abbreviations]{glossaries-extra}
+\usepackage[toc, nopostdot, numberedsection, record=hybrid, shortcuts=ac, abbreviations]{glossaries-extra}
 \makeglossaries
 \GlsXtrLoadResources[
-    src={pilon_gilles_glossary.bib},
+    src={~/documents/repositories/latex/pilon_gilles_glossary.bib},
     selection={recorded and deps},
-    sort=letter-nocase
+    sort=letter-nocase,
+    selection={all} % shows all glossary entries
 ]
 
 % define theorem-like elements
@@ -578,13 +579,13 @@ Here is a single citation without prenote and postnote. There is a definitive bo
 
 Here is a single citation with prenote only. There is a definitive book on SPC (\cite[see][]{wheeler2006}).
 
-Here is a single citation with postnote only. $C_\text{pm}$ is a complex subject (\cite[][pages 1-10]{chan1988}).
+Here is a single citation with postnote only. $C_\text{pm}$ is a complex subject (\cite[][1-10]{chan1988}).
 
 \section{Inserting glossary terms}\label{sec:glossary_terms}
 
 Here is a request to fill in \gls{endog}, \glspl{endog}, \gls{exog}, \glspl{exog}, \gls{machinelearning}, and \gls{seborrheickeratosis}.
 
-For dual abbreviations and glossary terms, \gls{aad}, \gls{mad}, \gls{mae}, \gls{mse}, \gls{rmse}, and \gls{anome}.
+For dual abbreviations and glossary terms, \gls{aad}, \gls{mad}, \gls{mae}, \gls{mse}, \gls{rmse}, \gls{anome}, \gls{iam}, \gls{pam}, \gls{edr}, \glsxtrlong{xdr}, \gls{pythonnamespace}, \gls{cybersecurity}.
 
 \gls{interaction}
 
