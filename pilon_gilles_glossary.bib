@@ -1,140 +1,113 @@
 % Encoding: UTF-8
-@dualabbreviationentry{onedimarray,
-short = {1d},
-long = {1d array},
+@entry{onedimarray,
+name = {1d array},
 description = {One-dimensional array. A NumPy array whose \textit{.shape} has length 1. A vector.}
 }
-@dualabbreviationentry{twodimarray,
-short = {2d},
-long = {2d array},
+@entry{twodimarray,
+name = {2d array},
 description = {Two-dimensional array. A NumPy array whose \textit{.shape} has length 2. Often represents a matrix.}
 }
-@dualabbreviationentry{aad,
-short = {AAD},
-long = {average absolute deviation},
-description = {This measure does not square the distance from the average, so it is less affected by extreme observations than are the \gls{variance} and the \gls{standarddeviation}. $$\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$$}
+@entry{aad,
+name = {average absolute deviation},
+description = {The average absolute deviation (AAD) measure does not square the distance from the average, so it is less affected by extreme observations than are the \gls{variance} and the \gls{standarddeviation}. $$\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$$}
 }
-@dualabbreviationentry{anome,
-short = {ANOME},
-description = {A chart that compares the \gls{averagestatistic} of each level to the overall average},
-long = {analysis of main effects}
+@entry{anome,
+name = {analysis of main effects},
+description = {The analysis of main effects (ANOME) chart that compares the \gls{averagestatistic} of each level to the overall average},
 }
-@dualabbreviationentry{anomr,
-short = {ANOMR},
-description = {A chart that compares the average range of each level to the overall range},
-long = {analysis of mean ranges}
+@entry{anomr,
+name = {analysis of mean ranges},
+description = {The analysis of mean ranges (ANOMR) chart compares the average range of each level to the overall range},
 }
-@dualabbreviationentry{cp,
-short = {$C_\text{p}$},
-description = {It compares the width of the process specification to the width of the process variation.},
-long = {process capability index two-sided (rational sample)}
+@entry{cp,
+name = {process capability index two-sided (rational sample)},
+description = {The process capability index two-sided (rational sample) ($C_\text{p}$) compares the width of the process specification to the width of the process variation.},
 }
-@dualabbreviationentry{cpk,
-short = {$C_\text{pk}$},
-description = {It calculates the distance from each specification limit to the \gls{averagestatistic}, compares them to the width of the process variation, and reports the smaller value.},
-long = {process capability index one-sided (rational sample)}
+@entry{cpk,
+name = {process capability index one-sided (rational sample)},
+description = {The process capability index one-sided (rational sample) ($C_\text{pk}$) calculates the distance from each specification limit to the \gls{averagestatistic}, compares them to the width of the process variation, and reports the smaller value.},
 }
-@dualabbreviationentry{cpm,
-short = {$C_\text{pm}$},
-description = {It calculates process capability with respect to deviation from the \gls{averagestatistic} and deviation from the target.},
-long = {process capability index loss function (random sample)}
+@entry{cpm,
+name = {process capability index loss function (random sample)},
+description = {The process capability index loss function (random sample) ($C_\text{pm}$) calculates process capability with respect to deviation from the \gls{averagestatistic} and deviation from the target.},
 }
-@dualabbreviationentry{etl,
-short = {ETL},
-long = {extract, transform, and load},
-description = {At a high level it is extract, transform, and load data. The specific tasks include: building data pipelines to gather information from difference source systems; integrate, consolidate, and clean data; structure the data for use in individual analytics applications.}
+@entry{etl,
+name = {extract, transform, and load},
+description = {At a high level extract, transform, and load  (ETL) extracts, transforms, and loads data. The specific tasks include: building data pipelines to gather information from difference source systems; integrate, consolidate, and clean data; structure the data for use in individual analytics applications.}
 }
-@dualabbreviationentry{gui,
-short = {GUI},
-long = {graphical user interface},
-longplural = {graphical user interfaces},
-description = {It is a visual interface that allows users to interact with a computer or other electronic device using icons, buttons, and menus. GUIs are interactive and replace text-based commands with user-friendly actions. The goal of a GUI is to make decision points easy for users to find, understand, and use.}
+@entry{gui,
+name = {graphical user interface},
+plural = {graphical user interfaces},
+description = {A graphical user interface (GUI) is a visual interface that allows users to interact with a computer or other electronic device using icons, buttons, and menus. GUIs are interactive and replace text-based commands with user-friendly actions. The goal of a GUI is to make decision points easy for users to find, understand, and use.}
 }
-@dualabbreviationentry{icc,
-short = {ICC},
-description = {Describes how strongly units in the same group resemble each other, with and without operators.},
-long = {intraclass correlation coefficient}
+@entry{icc,
+name = {intraclass correlation coefficient},
+description = {The intraclass correlation coefficient (ICC) describes how strongly units in the same group resemble each other, with and without operators.}
 }
-@dualabbreviationentry{iqr,
-short = {IQR},
-description = {This is the value of the 75\textsuperscript{th} percentile minus the value of the 25\textsuperscript{th} percentile. This \gls{dispersionstatistic} attempts to measure the variability of points near the centre.},
-long = {interquartile range}
+@entry{iqr,
+name = {interquartile range},
+description = {The interquartile range (IQR) is the value of the 75\textsuperscript{th} percentile minus the value of the 25\textsuperscript{th} percentile. This \gls{dispersionstatistic} attempts to measure the variability of points near the centre.},
 }
-@dualabbreviationentry{knn,
-short = {k-NN},
-long = {k-nearest neighbour},
-description = {It is a non-parametric supervised learning method used in classification and prediction. The input consists of the k closest training examples in a dataset. The output depends on whether k-NN is used for classification or prediction.}
+@entry{knn,
+name = {k-nearest neighbour},
+description = {The k-nearest neighbour (k-NN) is a non-parametric supervised learning method used in classification and prediction. The input consists of the k closest training examples in a dataset. The output depends on whether k-NN is used for classification or prediction.}
 }
-@dualabbreviationentry{mad,
-short = {MAD},
-description = {This is a variation of the \gls{aad} that is even less affected by extremes in the tail because the data in the tails have less influence on the calculation of the median than they do on the \gls{averagestatistic}. $$\text{MAD} = \text{median}\left(|Y_i - \tilde{Y}|\right)$$},
-long = {median absolute deviation}
+@entry{mad,
+name = {median absolute deviation},
+description = {The median absolute deviation (MAD) is a variation of the \gls{aad} that is even less affected by extremes in the tail because the data in the tails have less influence on the calculation of the median than they do on the \gls{averagestatistic}. $$\text{MAD} = \text{median}\left(|Y_i - \tilde{Y}|\right)$$},
 }
-@dualabbreviationentry{mae,
-short = {MAE},
-long = {mean absolute error},
-description = {It is the mean of the absolute value of the errors. $$\text{MAE} = \frac{\sum\limits_{i=1}^n\left(|y_i - \hat{y_i}|\right)}{n}$$}
+@entry{mae,
+name = {mean absolute error},
+description = {The mean absolute error (MAE) is the mean of the absolute value of the errors. $$\text{MAE} = \frac{\sum\limits_{i=1}^n\left(|y_i - \hat{y_i}|\right)}{n}$$}
 }
-@dualabbreviationentry{msa,
-short = {MSA},
-description = {Methods to evaluate measurements systems, to understand the causes of measurement variation},
-long = {Measurement System Analysis}
+@entry{msa,
+name = {Measurement System Analysis},
+description = {Measure system analysis (MSA) is a method to evaluate measurements systems, to understand the causes of measurement variation},
 }
-@dualabbreviationentry{mse,
-short = {MSE},
-long = {mean squared error},
-description = {It is the mean of the squared errors. $$\text{MSE} = \frac{\sum\limits_{i=1}^n\left(y_i - \hat{y_i}\right)^2}{n}$$}
+@entry{mse,
+name = {mean squared error},
+description = {The mean squared error (MSE) is the mean of the squared errors. $$\text{MSE} = \frac{\sum\limits_{i=1}^n\left(y_i - \hat{y_i}\right)^2}{n}$$}
 }
-@dualabbreviationentry{pp,
-short = {$P_\text{p}$},
-description = {Compares the width of the process specification to the width of the process variation},
-long = {process capability index two-sided (random sample)}
+@entry{pp,
+name = {process capability index two-sided (random sample)},
+description = {process capability index two-sided (random sample) ($P_\text{p}$) compares the width of the process specification to the width of the process variation},
 }
-@dualabbreviationentry{ppk,
-short = {$P_\text{pk}$},
-description = {It calculates the distance from each specification limit to the \gls{averagestatistic}, compares them to the width of the process variation, and reports the smaller value.},
-long = {process capability index one-sided (random sample)}
+@entry{ppk,
+name = {process capability index one-sided (random sample)},
+description = {The process capability index one-sided (random sample) ($P_\text{pk}$) calculates the distance from each specification limit to the \gls{averagestatistic}, compares them to the width of the process variation, and reports the smaller value.},
 }
-@dualabbreviationentry{rmse,
-short = {RMSE},
-long = {root-mean-squared error},
-longplural = {root-mean-squared errors},
-description = {It is a frequently-used measure of the differences between values predicted by a model or an estimator and the values observed. $$\text{RMSE} = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(y_i - \widehat{y}\right)^2}{n}}$$}
+@entry{rmse,
+name = {root-mean-squared error},
+plural = {root-mean-squared errors},
+description = {The root-mean-squared error (RMSE) is a frequently-used measure of the differences between values predicted by a model or an estimator and the values observed. $$\text{RMSE} = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(y_i - \widehat{y}\right)^2}{n}}$$}
 }
-@dualabbreviationentry{rpa,
-short = {RPA},
-long = {Robotic Process Automation},
-description = {It uses software robots to handle repetitive computer tasks. The benefits include reduced execution time, customization for specific needs, perform complex workflows, and consistent repeatability to eliminate human errors.}
+@entry{rpa,
+name = {robotic process automation},
+description = {Robotic process automation (RPA) uses software robots to handle repetitive computer tasks. The benefits include reduced execution time, customization for specific needs, perform complex workflows, and consistent repeatability to eliminate human errors.}
 }
-@dualabbreviationentry{sap,
-short = {SAP},
-long = {Systems, Applications, and Products},
-description = {It is a suite of software solutions developed by the German company SAP SE. SAP software is primarily focused on Enterprise Resource Planning (ERP), which means it helps businesses manage and integrate various core functions.}
+@entry{sap,
+name = {Systems, Applications, and Products},
+description = {Systems, Applications, and Products (SAP) is a suite of software solutions developed by the German company SAP SE. SAP software is primarily focused on Enterprise Resource Planning (ERP), which means it helps businesses manage and integrate various core functions.}
 }
-@dualabbreviationentry{svm,
-short = {SVM},
-long = {support-vector machine},
-description = {It is a supervised learning model with associated algorithms that analyze data for classification and prediction.}
+@entry{svm,
+name = {support-vector machine},
+description = {A support-vector machine (SVM) is a supervised learning model with associated algorithms that analyze data for classification and prediction.}
 }
-@dualabbreviationentry{iam,
-short = {IAM},
-long = {identity and access management},
-description = {It is a framework of policies and technologies to ensure that the right users have the appropriate access to technology resources. It identifies, authenticates, and controls access for individuals who will be using information technology resources, hardware, and access to applications.},
+@entry{iam,
+name = {identity and access management},
+description = {Identity and access management (IAM) is a framework of policies and technologies to ensure that the right users have the appropriate access to technology resources. It identifies, authenticates, and controls access for individuals who will be using information technology resources, hardware, and access to applications.},
 }
-@dualabbreviationentry{pam,
-short = {PAM},
-long = {privileged access management},
-description = {It is a type of \gls{iam} and \gls{cybersecurity} technology that focuses on the control, monitoring, and protection of privileged accounts in an organization. Accounts with privileged access grant users enhanced permissions, making them prime targets for attackers due to their extensive access to vital systems and sensitive data.}
+@entry{pam,
+name = {privileged access management},
+description = {Privileged access management (PAM) is a type of \gls{iam} and \gls{cybersecurity} technology that focuses on the control, monitoring, and protection of privileged accounts in an organization. Accounts with privileged access grant users enhanced permissions, making them prime targets for attackers due to their extensive access to vital systems and sensitive data.}
 }
-@dualabbreviationentry{edr,
-short = {EDR},
-long = {endpoint detection and response},
-description = {It is \gls{cybersecurity} technology that continually monitors an endpoint (mobile phone, laptop, internet of things devices) to mitigate malicious cyber threats},
+@entry{edr,
+name = {endpoint detection and response},
+description = {Endpoint detection and response (EDR) is \gls{cybersecurity} technology that continually monitors an endpoint (mobile phone, laptop, internet of things devices) to mitigate malicious cyber threats},
 }
-@dualabbreviationentry{xdr,
-short = {XDR},
-long = {extended detection and response},
-description = {It provides security incident detection and automated response capabilities for security infrastructure. It integrates threat intelligence and telemetry data from multiple sources with security analytics to provide conceptualization and correlation of security alerts.}
+@entry{xdr,
+name = {extended detection and response},
+description = {Extended detection and response (XDR) provides security incident detection and automated response capabilities for security infrastructure. It integrates threat intelligence and telemetry data from multiple sources with security analytics to provide conceptualization and correlation of security alerts.}
 }
 @entry{abbreviation,
 name = {abbreviation},
@@ -180,6 +153,14 @@ description = {Artificial intelligence (AI) is about creating computer systems t
 }
 @entry{artificialnarrowintelligence,
 name = {artificial narrow intelligence},
+description = {TBD}
+}
+@entry{artificialgeneralintelligence,
+name = {artificial general intelligence},
+description = {TBD}
+}
+@entry{artificialsuperintelligence,
+name = {artificial super intelligence},
 description = {TBD}
 }
 @entry{generativeartificialintelligence,
@@ -580,6 +561,10 @@ description = {It is an answer, a target, a ground truth, or an output.}
 @entry{largelanguagemodel,
 name = {large language model},
 description = {A large language model (LLM) is a type of artificial intelligence model that is trained on a massive amount of text data. It is capable of generating human quality text, translating languages, writing different kinds of creative content, and answering one's questions in an informative way.}
+}
+@entry{latex,
+name = {LaTeX},
+description = {LaTex, pronounced \enquote{lay-tech,} is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as free software (\cite{oetiker_serwin_partl_hyna_schlegl}).}
 }
 @entry{linearregression,
 name = {linear regression},
