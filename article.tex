@@ -51,6 +51,9 @@
 % very useful for mathematics
 \usepackage{amsmath, amsthm, amssymb}
 
+% use this package for better control over quotes
+\usepackage{csquotes}
+
 % very useful for hyperlinks
 \usepackage[unicode]{hyperref}
 \hypersetup{
@@ -59,6 +62,8 @@
     urlcolor=magenta,
     citecolor=green
 }
+
+\usepackage{xcolor}
 
 % required for bibtex URLs
 \usepackage{url}
@@ -91,6 +96,15 @@
     sort=letter-nocase,
     selection={all} % shows all glossary entries
 ]
+
+% the above shows every single term in pilon_gilles_glossary.bib
+% use the following instead when only list terms used in the document
+
+% \GlsXtrLoadResources[
+%     src={~/documents/repositories/latex/pilon_gilles_glossary.bib},
+%     selection={recorded and deps},
+%     sort=letter-nocase
+% ]
 
 % define theorem-like elements
 % \theoremstyle{myenv}
@@ -585,7 +599,7 @@ Here is a single citation with postnote only. $C_\text{pm}$ is a complex subject
 
 Here is a request to fill in \gls{endog}, \glspl{endog}, \gls{exog}, \glspl{exog}, \gls{machinelearning}, and \gls{seborrheickeratosis}.
 
-For dual abbreviations and glossary terms, \gls{aad}, \gls{mad}, \gls{mae}, \gls{mse}, \gls{rmse}, \gls{anome}, \gls{iam}, \gls{pam}, \gls{edr}, \glsxtrlong{xdr}, \gls{pythonnamespace}, \gls{cybersecurity}.
+For glossary terms use \gls{aad}, \gls{mad}, \gls{mae}, \gls{mse}, \gls{rmse}, \gls{anome}, \gls{iam}, \gls{pam}, \gls{edr}, \glsxtrlong{xdr}, \gls{pythonnamespace}, \gls{cybersecurity}.
 
 \gls{interaction}
 
@@ -595,8 +609,8 @@ For dual abbreviations and glossary terms, \gls{aad}, \gls{mad}, \gls{mae}, \gls
 % \newpage
 % \listofmypropositions
 
-\newpage
-\printunsrtglossary[type={abbreviations}]
+% \newpage
+% \printunsrtglossary[type={abbreviations}]
 
 \newpage
 \printunsrtglossary[style={indexgroup}]
