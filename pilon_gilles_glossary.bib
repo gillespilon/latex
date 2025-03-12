@@ -1,15 +1,11 @@
 % Encoding: UTF-8
-@entry{onedimarray,
-name = {1d array},
-description = {One-dimensional array. A NumPy array whose \textit{.shape} has length 1. A vector.}
-}
 @entry{twodimarray,
 name = {2d array},
 description = {Two-dimensional array. A NumPy array whose \textit{.shape} has length 2. Often represents a matrix.}
 }
 @entry{aad,
 name = {average absolute deviation},
-description = {The average absolute deviation (AAD) measure does not square the distance from the average, so it is less affected by extreme observations than are the \gls{variance} and the \gls{standarddeviation}. $$\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$$}
+description = {The average absolute deviation (AAD) measure does not square the distance from the average, so it is less affected by extreme \glspl{observation} than are the \gls{variance} and the \gls{standarddeviation}. $$\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$$}
 }
 @entry{anome,
 name = {analysis of main effects},
@@ -206,7 +202,7 @@ description = {A biometric identifier is a unique physical characteristic that c
 }
 @entry{blocking,
 name = {blocking},
-description = {It is groups of experimental runs in which randomisation is restricted within a group, for example, four runs in the morning and four runs in the afternoon. The relative homogeneity within a block and the identification and inclusion of the block as a factor in the experiment can be used to increase the accuracy of an experiment.}
+description = {It is groups of experimental runs in which randomisation is restricted within a group, for example, four runs in the morning and four runs in the afternoon. The relative homogeneity within a block and the identification and inclusion of the block as a factor in the \gls{experiment} can be used to increase the accuracy of an \gls{experiment}.}
 }
 @entry{chatbot,
 name = {chatbot},
@@ -370,7 +366,7 @@ description = {It is a process that aims to improve an entity by triggering sign
 @entry{discriminativemodel,
 plural = {discriminative model},
 name = {discriminative models},
-description = {In \gls{statisticalclassification} a discriminative approach computers a classifier such as logistic regression. A discriminative model is a model of the \gls{conditionalprobability} $P(Y | X = x)$ of the target $Y$ given an observation $x$. It can be used to discriminate the value of the target variable $Y$ given an observation $x$.}
+description = {In \gls{statisticalclassification} a discriminative approach computers a classifier such as logistic regression. A discriminative model is a model of the \gls{conditionalprobability} $P(Y | X = x)$ of the target $Y$ given an \gls{observation} $x$. It can be used to discriminate the value of the target variable $Y$ given an \gls{observation} $x$.}
 }
 @entry{dispersion,
 plural = {dispersions},
@@ -426,7 +422,7 @@ description = {An embedded operating system is an \gls{operatingsystem} designed
 }
 @entry{empiricalmethod,
 name = {empirical method},
-description = {It is any procedure for conducting an investigation that relies upon experimentation and systematic observation rather than theoretical speculation.}
+description = {It is any procedure for conducting an investigation that relies upon experimentation and systematic \gls{observation} rather than theoretical speculation.}
 }
 @entry{endog,
 name = {endogenous variable},
@@ -441,7 +437,7 @@ description = {Exogenous variables are terms in a model. They are caused by fact
 @entry{experiment,
 name = {experiment},
 plural = {experiments},
-description = {TBD}
+description = {It is a series of \glspl{observation} conducted under controlled conditions to study a relationship with the purpose of drawing causal inferences about that relationship. An experiment involves the manipulation of an independent variable, the measurement of a dependent variable, and the exposure of various participants to one or more of the conditions being studied. Random selection of participants and their random assignment to conditions also are necessary in experiments.}
 }
 @entry{expectedmeansquares,
 name = {expected mean squares},
@@ -464,7 +460,7 @@ description = {It is the value that a factor in a \gls{designedexperiment} is se
 @entry{factorialexperiment,
 name = {factorial experiment},
 plural = {factorial experiments},
-description = {It is a designed experiment that measures all possible combinations of factors.}
+description = {It is a \gls{designedexperiment} that measures all possible combinations of factors.}
 }
 @entry{featureengineering,
 name = {feature engineering},
@@ -478,7 +474,7 @@ description = {A fingerprint is the impression of a fingertip on any surface.}
 @entry{fixedeffectsmodel,
 name = {fixed effects model},
 plural = {fixed effects models},
-description = {It is a statistical model in which the model parameters are non-random quantities. The mathematical model that describes the relationship between the response and treatment for the one-way ANOVA is given by $Y_{ij} = \mu + \tau + \epsilon_{ij}$, where $Y_{ij}$ represents the j\textsuperscript{th} observation ($j = 1, 2, \ldots, n_i$) on the i\textsuperscript{th} treatment ($i = 1, 2, \ldots, k$ levels). $\mu$ is the common effect for the whole experiment, $\tau_i$ represents the i\textsuperscript{th} treatment effect, and $\epsilon_{ij}$ represents the random error present in the j\textsuperscript{th} observation on the i\textsuperscript{th} treatment. The errors $\epsilon_{ij}$ are assumed to be normally and independently (NID) distributed, with mean zero and variance $\sigma^2_\epsilon$. $\mu$ is always a fixed parameter, and $\tau_1, \tau_2, \ldots, \tau_k$ are considered to be fixed parameters if the levels of the treatment are fixed and not a random sample from a population of possible levels. It is also assumed that $\mu$ is chosen so that $\sum \tau_i = 0,\;i = 1, \ldots, k$ holds. This is the fixed effects model.}
+description = {It is a statistical model in which the model parameters are non-random quantities. The mathematical model that describes the relationship between the response and treatment for the one-way ANOVA is given by $Y_{ij} = \mu + \tau + \epsilon_{ij}$, where $Y_{ij}$ represents the j\textsuperscript{th} \gls{observation} ($j = 1, 2, \ldots, n_i$) on the i\textsuperscript{th} treatment ($i = 1, 2, \ldots, k$ levels). $\mu$ is the common effect for the whole \gls{experiment}, $\tau_i$ represents the i\textsuperscript{th} treatment effect, and $\epsilon_{ij}$ represents the random error present in the j\textsuperscript{th} \gls{observation} on the i\textsuperscript{th} treatment. The errors $\epsilon_{ij}$ are assumed to be normally and independently (NID) distributed, with mean zero and variance $\sigma^2_\epsilon$. $\mu$ is always a fixed parameter, and $\tau_1, \tau_2, \ldots, \tau_k$ are considered to be fixed parameters if the levels of the treatment are fixed and not a random sample from a population of possible levels. It is also assumed that $\mu$ is chosen so that $\sum \tau_i = 0,\;i = 1, \ldots, k$ holds. This is the fixed effects model.}
 }
 @entry{fractionalfactorialexperiment,
 name = {fractional factorial experiment},
@@ -492,7 +488,7 @@ description = {Generative artificial intelligence is a type of \gls{artificialin
 @entry{generativemodel,
 name = {generative model},
 plural = {generative models},
-description = {In \gls{statisticalclassification} the generative approach computes classifiers such as the naive Bayes classifier or the linear discriminative analysis. A discriminative model is a model of the \gls{conditionalprobability} $P(X | Y = y)$ of the observable $X$ given a target $Y$. A generative model can be used to generate random instances (outcomes) of an observation $x$.}
+description = {In \gls{statisticalclassification} the generative approach computes classifiers such as the naive Bayes classifier or the linear discriminative analysis. A discriminative model is a model of the \gls{conditionalprobability} $P(X | Y = y)$ of the observable $X$ given a target $Y$. A generative model can be used to generate random instances (outcomes) of an \gls{observation} $x$.}
 }
 @entry{github,
 name = {GitHub},
@@ -550,7 +546,7 @@ description = {It means incapable of being expressed in words.}
 @entry{instance,
 name = {instance},
 plural = {instances},
-description = {It is an example, an observation, or a row of a spreasheet.}
+description = {It is an example, an \gls{observation}, or a row of a spreasheet.}
 }
 @entry{interaction,
 name = {interaction},
@@ -582,7 +578,7 @@ description = {It is a \gls{machinelearning} technique that divides all the samp
 }
 @entry{kmeansclustering,
 name = {K-means clustering},
-description = {It is an algorithm that divides n observations into k clusters, in which each observation belongs to the cluster with the nearest mean. This algorithm clusters \glspl{datum} by trying to separate observations into k clusters of equal variance, minimizing the within-cluster sum-of-squares.}
+description = {It is an algorithm that divides n \glspl{observation} into k clusters, in which each \gls{observation} belongs to the cluster with the nearest mean. This algorithm clusters \glspl{datum} by trying to separate \glspl{observation} into k clusters of equal variance, minimizing the within-cluster sum-of-squares.}
 }
 @entry{label,
 name = {label},
@@ -710,6 +706,15 @@ plural = {normal distributions},
 name = {normal distribution},
 description = {It is a type of continuous probability distribution for a real-valued random variable}
 }
+@entry{observation,
+name = {observation},
+plural = {observations},
+description = {It is the careful, close examination of an object, process, or other phenomenon for the purpose of collecting data about it or drawing conclusions.}
+}
+@entry{onedimarray,
+name = {1d array},
+description = {One-dimensional array. A NumPy array whose \textit{.shape} has length 1. A vector.}
+}
 @entry{openpyxl,
 name = {openpyxl},
 description = {It is a \Gls{python} library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files. (\cite{openpyxl})}
@@ -726,11 +731,11 @@ description = {An operating system is software that manages computer hardware an
 @entry{outlier,
 plural = {outliers},
 name = {outlier},
-description = {It is a \gls{datum} point that differs significantly from other observations. An outlier may be due to variability in the measurement or it may indicate experimental error. An outlier can cause serious problems in statistical analyses.}
+description = {It is a \gls{datum} point that differs significantly from other \glspl{observation}. An outlier may be due to variability in the measurement or it may indicate experimental error. An outlier can cause serious problems in statistical analyses.}
 }
 @entry{overfitting,
 name = {overfitting},
-description = {It is the production of an analysis that corresponds too closely or exactly to a particular set of \glspl{datum}, and may therefore fail to fit to additional \glspl{datum} or predict future observations reliably. An overfitted model is a mathematical model that contains more parameters than can be justified by the \glspl{datum}. The essence of overfitting is to have unknowingly extracted some of the residual variation (that is, the noise) as if that variation represented underlying model structure. The possibility of over-fitting exists because the criterion used for selecting the model is not the same as the criterion used to judge the suitability of a model. For example, a model might be selected by maximizing its performance on some set of \gls{trainingdataset}, and yet its suitability might be determined by its ability to perform well on unseen data; then over-fitting occurs when a model begins to \enquote{memorize} \gls{trainingdataset} rather than \enquote{learning} to generalize from a trend. As an extreme example, if the number of parameters is the same as or greater than the number of observations, then a model can perfectly predict the \gls{trainingdataset} simply by memorizing the \glspl{datum} in its entirety. Such a model, though, will typically fail severely when making predictions.}
+description = {It is the production of an analysis that corresponds too closely or exactly to a particular set of \glspl{datum}, and may therefore fail to fit to additional \glspl{datum} or predict future \glspl{observation} reliably. An overfitted model is a mathematical model that contains more parameters than can be justified by the \glspl{datum}. The essence of overfitting is to have unknowingly extracted some of the residual variation (that is, the noise) as if that variation represented underlying model structure. The possibility of over-fitting exists because the criterion used for selecting the model is not the same as the criterion used to judge the suitability of a model. For example, a model might be selected by maximizing its performance on some set of \gls{trainingdataset}, and yet its suitability might be determined by its ability to perform well on unseen data; then over-fitting occurs when a model begins to \enquote{memorize} \gls{trainingdataset} rather than \enquote{learning} to generalize from a trend. As an extreme example, if the number of parameters is the same as or greater than the number of \glspl{observation}, then a model can perfectly predict the \gls{trainingdataset} simply by memorizing the \glspl{datum} in its entirety. Such a model, though, will typically fail severely when making predictions.}
 }
 @entry{pandas,
 name = {pandas},
@@ -853,7 +858,7 @@ description = {It is an \gls{opensourcesoftware} \gls{softwareframework} for \gl
 @entry{randomeffectsmodel,
 name = {random effects model},
 plural = {random effects models},
-description = {It is also called a variance components model. It is a statistical model where the model parameters are random quantities. The mathematical model that describes the relationship between the response and treatment for the one-way ANOVA is given by $Y_{ij} = \mu + \tau + \epsilon_{ij}$, where $Y_{ij}$ represents the j\textsuperscript{th} observation ($j = 1, 2, \ldots, n_i$) on the i\textsuperscript{th} treatment ($i = 1, 2, \ldots, k$ levels). $\mu$ is the common effect for the whole experiment, $\tau_i$ represents the i\textsuperscript{th} treatment effect, and $\epsilon_{ij}$ represents the random error present in the j\textsuperscript{th} observation on the i\textsuperscript{th} treatment. The errors $\epsilon_{ij}$ are assumed to be normally and independently (NID) distributed, with mean zero and variance $\sigma^2_\epsilon$. $\mu$ is always a fixed parameter, and $\tau_1, \tau_2, \ldots, \tau_k$ are considered to be random parameters if the levels of the treatment are random and not a fixed sample from a population of possible levels. It is also assumed that $\mu$ is chosen so that $\sum \tau_i = 0,\;i = 1, \ldots, k$ holds. This is the random effects model.}
+description = {It is also called a variance components model. It is a statistical model where the model parameters are random quantities. The mathematical model that describes the relationship between the response and treatment for the one-way ANOVA is given by $Y_{ij} = \mu + \tau + \epsilon_{ij}$, where $Y_{ij}$ represents the j\textsuperscript{th} \gls{observation} ($j = 1, 2, \ldots, n_i$) on the i\textsuperscript{th} treatment ($i = 1, 2, \ldots, k$ levels). $\mu$ is the common effect for the whole \gls{experiment}, $\tau_i$ represents the i\textsuperscript{th} treatment effect, and $\epsilon_{ij}$ represents the random error present in the j\textsuperscript{th} \gls{observation} on the i\textsuperscript{th} treatment. The errors $\epsilon_{ij}$ are assumed to be normally and independently (NID) distributed, with mean zero and variance $\sigma^2_\epsilon$. $\mu$ is always a fixed parameter, and $\tau_1, \tau_2, \ldots, \tau_k$ are considered to be random parameters if the levels of the treatment are random and not a fixed sample from a population of possible levels. It is also assumed that $\mu$ is chosen so that $\sum \tau_i = 0,\;i = 1, \ldots, k$ holds. This is the random effects model.}
 }
 @entry{randomforest,
 name = {random forest},
@@ -891,7 +896,7 @@ description = {It is the difference between the actual response value obtained i
 @entry{resolution,
 name = {resolution},
 plural = {resolutions},
-description = {It is a method to categorize the amount of confounding in an experiment. The higher the resolution number, the less the confounding. The resolution of a two-level fractional factorial design is the length of the shortest word in the defining relation (\cite[][385-390]{boxhunterhunter1978}).}
+description = {It is a method to categorize the amount of confounding in an \gls{experiment}. The higher the resolution number, the less the confounding. The resolution of a two-level fractional factorial design is the length of the shortest word in the defining relation (\cite[][385-390]{boxhunterhunter1978}).}
 }
 @entry{resolutioniiidesign,
 name = {resolution III design},
@@ -919,7 +924,7 @@ description = {Systems, Applications, and Products (SAP) is a suite of software 
 }
 @entry{scientificmethod,
 name = {scientific method},
-description = {It is an \gls{empiricalmethod} consisting of a set of procedures, guidelines, assumptions, and attitudes required for the organized and systematic collection, interpretation, and verification of data and the discovery of reproducible evidence, enabling laws and principles to be stated or modified.}
+description = {It is an \gls{empiricalmethod} consisting of a set of procedures, guidelines, assumptions, and attitudes required for the organized and systematic collection, interpretation, and verification of data and the discovery of reproducible evidence, enabling laws and principles to be stated or modified. One researcher comes up with a result (from theory, hunch, \gls{observation}). This is not the truth. A scientific, emergent truth is not the result of any one \gls{experiment}. Many researchers try to verify it. If no one can prove it wrong, one can declare a consensus of \glspl{observation} and \glspl{experiment} has emerged in the scientific community.}
 }
 @entry{scikitlearn,
 name = {scikit-learn},
