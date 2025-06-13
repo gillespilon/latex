@@ -1,0 +1,88 @@
+\documentclass[10pt, letterpaper, twoside]{article} % Using article class for simplicity
+\usepackage[utf8]{inputenc}     % For correct handling of special characters
+\usepackage[sfdefault]{noto}
+\usepackage[T1]{fontenc}        % For proper font encoding
+\usepackage[nohyper]{ragged2e}  % For \RaggedRight to left-align content
+\usepackage{geometry}           % For easy margin setting
+\usepackage{url}                % For formatting URLs
+\usepackage{titlesec}           % For controlling section spacing
+\usepackage{enumitem}           % For controlling list indentation
+
+% --- Custom Section Formatting ---
+% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
+\titleformat{\section}[block]{\bfseries\large}{\thesection}{1em}{}
+
+% --- Geometry Settings ---
+\geometry{margin=0.5in} % Set all margins to 1 inch
+
+% --- Page Style (No Page Numbers) ---
+\pagestyle{empty}
+
+% --- Reduce Section Spacing ---
+% \titlespacing{<command>}{<left>}{<before-skip>}{<after-skip>}
+\titlespacing{\section}{0pt}{12pt}{5pt}
+\titlespacing{\subsection}{0pt}{8pt}{3pt}
+
+% --- Custom Em Dash Macro (if you defined it) ---
+\newcommand{\spacedemdash}{\,---\,} % Example: if you want thin spaces
+
+% --- Global Itemize Indentation & Spacing Control (MODIFIED) ---
+\setlist[itemize]{
+    leftmargin=*,      % Keeps text flush with left margin
+    topsep=0pt,        % Reduces space before the first item
+    partopsep=0pt,     % Reduces additional space if list starts new paragraph
+    itemsep=0pt,       % Reduces space between individual items
+    parsep=0pt         % Reduces space between paragraphs *within* an item (if any)
+}
+
+% --- Discourage hyphenation
+\hyphenpenalty=10000   % Discourage hyphenation of words
+\exhyphenpenalty=10000 % Discourage hyphenation of words already containing hyphens
+
+\begin{document}
+% --- Apply \RaggedRight to the entire document body (excluding centered parts) ---
+\RaggedRight
+
+% --- Contact Information ---
+\begin{center}
+    \textbf{\large FIRSTNAME LASTNAME} \\
+    city province \\
+    telephone \\
+    email \\
+    \url{https://github.com/yourid} \\
+    \url{https://www.linkedin.com/in/yourid/}
+\end{center}
+
+% --- Professional Title ---
+% \RaggedRight ensures the content is left-aligned from here onwards.
+% Place it before the content you want to affect.
+% \centerline{\textbf{Senior Machine Learning Engineer}}
+
+\section*{SUMMARY}
+insert text
+
+\section*{EXPERIENCE}
+
+\noindent\textbf{company \textbar ~city province \textbar ~title} \hfill \textbf{yyyy-mm\spacedemdash yyyy-mm} \\
+brief job description
+\begin{itemize}
+    \item achievement
+    \item achievement
+\end{itemize}
+\vspace{8pt}
+
+\noindent\textbf{company \textbar ~city province \textbar ~title} \hfill \textbf{yyyy-mm\spacedemdash yyyy-mm} \\
+brief job description
+\begin{itemize}
+    \item achievement
+    \item achievement
+\end{itemize}
+\vspace{8pt}
+
+\section*{SKILLS}
+skill, skill, ...
+
+\section*{EDUCATION}
+degree, major, university, city province
+
+\end{document}
